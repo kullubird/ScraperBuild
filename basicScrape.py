@@ -1,25 +1,35 @@
 from riotwatcher import RiotWatcher
 import json
 
-watcher = RiotWatcher('RGAPI-7cc66cfc-06d9-4827-9247-1428883e3b7f')
+watcher = RiotWatcher('RGAPI-a0e37b3e-fc36-4fdf-8939-05cb5046f9fa')
 
 my_region = 'na1'
 
-me = watcher.summoner.by_name(my_region, 'pseudonym117')
-#print(me)
+accountDetails = watcher.summoner.by_name(my_region, 'pseudonym117')
+print(accountDetails['accountId'])
+
 
 # 1514745000000 is jan 1st 2018
 
-matchList=watcher.match.matchlist_by_account(my_region,'44297600')
+matchList=watcher.match.matchlist_by_account(my_region,accountDetails['accountId'])
 
+fileT=open("matchIds.txt","a+")
+	
+for m in matchList['matches']:
+	print(m['gameId'])
+	gId = str(m['gameId'])
+	fileT.write(gId + "\n")
+	print("working")
+
+fileT.close()
 #jsonMatchList=json.loads(matchList)
-print(matchList)
+#print(matchList)
 
 
 # all objects are returned (by default) as a dict
 # lets see if i got diamond yet (i probably didnt)
 
-my_ranked_stats = watcher.league.positions_by_summoner(my_region, me['id'])
+#my_ranked_stats = watcher.league.positions_by_summoner(my_region, me['id'])
 #print(my_ranked_stats)
 
 # Lets some champions

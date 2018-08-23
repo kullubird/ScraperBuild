@@ -1,0 +1,6 @@
+from riotwatcher import RiotWatcher
+import json
+
+filePointer=open("doneUserIds.txt","a+")
+filePointer.write(currentAccountId)
+filePointer.close()

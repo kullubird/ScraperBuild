@@ -1,27 +1,44 @@
 from riotwatcher import RiotWatcher
 import json
 
-watcher = RiotWatcher('RGAPI-a0e37b3e-fc36-4fdf-8939-05cb5046f9fa')
 
+
+#API key setter and region
+watcher = RiotWatcher('RGAPI-a0e37b3e-fc36-4fdf-8939-05cb5046f9fa')
 my_region = 'na1'
 
-accountDetails = watcher.summoner.by_name(my_region, 'pseudonym117')
-print(accountDetails['accountId'])
+#initilisting lists
+newMatchIds=open('newMatchIds.txt').read().splitlines()
+doneMatchIds=open('doneMatchIds.txt').read().splitlines()
+newUserIds=open('newUserIds.txt').read().splitlines()
+doneUserIds=open('doneUserIds.txt').read().splitlines()
 
+
+accountDetails = watcher.summoner.by_name(my_region, 'pseudonym117')
+
+currentAccountId=accountDetails['accountId']
 
 # 1514745000000 is jan 1st 2018
 
 matchList=watcher.match.matchlist_by_account(my_region,accountDetails['accountId'])
 
-fileT=open("matchIds.txt","a+")
+filePointer=open("newMatchIds.txt","a+")
 	
-for m in matchList['matches']:
-	print(m['gameId'])
-	gId = str(m['gameId'])
-	fileT.write(gId + "\n")
-	print("working")
 
-fileT.close()
+# getting all match ids from history of a current account of a paticular id	
+for m in matchList['matches']:
+	gId = str(m['gameId'])
+	filePointer.write(gId + "\n")
+
+
+filePointer.close()
+
+filePointer=open("doneUserIds.txt","a+")
+currentAccountId=str(currentAccountId)
+filePointer.write(currentAccountId)
+filePointer.close()
+
+
 #jsonMatchList=json.loads(matchList)
 #print(matchList)
 

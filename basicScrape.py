@@ -1,57 +1,53 @@
 from riotwatcher import RiotWatcher
 import json
 
-
+apiKey='RGAPI-9f43ee03-30db-471a-9bfd-a5cbafe64a1c'
 
 #API key setter and region
-watcher = RiotWatcher('RGAPI-a0e37b3e-fc36-4fdf-8939-05cb5046f9fa')
+watcher = RiotWatcher(apiKey)
 my_region = 'na1'
 
 #initilisting lists
-newMatchIds=open('newMatchIds.txt').read().splitlines()
-doneMatchIds=open('doneMatchIds.txt').read().splitlines()
-newUserIds=open('newUserIds.txt').read().splitlines()
-doneUserIds=open('doneUserIds.txt').read().splitlines()
+listNewMatchIds=open('newMatchIds.txt').read().splitlines()
+listDoneMatchIds=open('doneMatchIds.txt').read().splitlines()
+listNewUserIds=open('newUserIds.txt').read().splitlines()
+listDoneUserIds=open('doneUserIds.txt').read().splitlines()
+
+#converting lists into sets so no all unique values
+setNewMatchIds=set(listNewMatchIds)
+setDoneMatchIds=set(listDoneMatchIds)
+setNewUserIds=set(listNewUserIds)
+setDoneUserIds=set(listDoneUserIds)
 
 
-accountDetails = watcher.summoner.by_name(my_region, 'pseudonym117')
-
-currentAccountId=accountDetails['accountId']
 
 # 1514745000000 is jan 1st 2018
 
-matchList=watcher.match.matchlist_by_account(my_region,accountDetails['accountId'])
-
-filePointer=open("newMatchIds.txt","a+")
-	
-
-# getting all match ids from history of a current account of a paticular id	
-for m in matchList['matches']:
-	gId = str(m['gameId'])
-	filePointer.write(gId + "\n")
+while len(setNewUserIds)!=0:
 
 
-filePointer.close()
-
-filePointer=open("doneUserIds.txt","a+")
-currentAccountId=str(currentAccountId)
-filePointer.write(currentAccountId)
-filePointer.close()
+	for newId in setNewUserIds:
 
 
-#jsonMatchList=json.loads(matchList)
-#print(matchList)
+		# removing item from new set and inserting into done set
+		currentAccountId=newId
+		setNewUserIds.remove(newId)
+		setDoneUserIds.add(newId)
+
+		# getting all match ids from history of a current account of a paticular id
+
+		matchList=watcher.match.matchlist_by_account(my_region,currentAccountId)
+
+		for m in matchList['matches']:
+
+			#will add the tracing for ids of each match here
+			setNewMatchIds.add(m)
 
 
-# all objects are returned (by default) as a dict
-# lets see if i got diamond yet (i probably didnt)
 
-#my_ranked_stats = watcher.league.positions_by_summoner(my_region, me['id'])
-#print(my_ranked_stats)
 
-# Lets some champions
-#static_champ_list = watcher.static_data.champions(my_region)
-#print(static_champ_list)
+
+
 
 # Error checking requires importing HTTPError from requests
 
@@ -75,3 +71,30 @@ except HTTPError as err:
         print('Summoner with that ridiculous name not found.')
     else:
         print("pie")
+
+
+ #refill the files
+
+filePointer=open("newUserIds.txt","w")
+for lines in setNewUserIds:
+	temp=str(lineL)
+	filePointer.write("%s\n"%temp)
+filePointer.close()
+
+filePointer=open("doneUserIds.txt","w")
+for lines in setDoneUserIds:
+	temp=str(lineL)
+	filePointer.write("%s\n"%temp)
+filePointer.close()
+
+filePointer=open("newMatchIds.txt","w")
+for lines in setNewMatchIds:
+	temp=str(lineL)
+	filePointer.write("%s\n"%temp)
+filePointer.close()
+
+filePointer=open("doneMatchIds.txt","w")
+for lines in setDoneMatchIds:
+	temp=str(lineL)
+	filePointer.write("%s\n"%temp)
+filePointer.close()

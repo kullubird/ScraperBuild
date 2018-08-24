@@ -8,10 +8,10 @@ watcher = RiotWatcher(apiKey)
 my_region = 'na1'
 
 #initilisting lists
-listNewMatchIds=open('newMatchIds.txt').read().splitlines()
-listDoneMatchIds=open('doneMatchIds.txt').read().splitlines()
-listNewUserIds=open('newUserIds.txt').read().splitlines()
-listDoneUserIds=open('doneUserIds.txt').read().splitlines()
+listNewMatchIds=open('newMatchIdsNa1.txt').read().splitlines()
+listDoneMatchIds=open('doneMatchIdsNa1.txt').read().splitlines()
+listNewUserIds=open('newUserIdsNa1.txt').read().splitlines()
+listDoneUserIds=open('doneUserIdsNa1.txt').read().splitlines()
 
 #converting lists into sets so no all unique values
 setNewMatchIds=set(listNewMatchIds)
@@ -20,59 +20,91 @@ setNewUserIds=set(listNewUserIds)
 setDoneUserIds=set(listDoneUserIds)
 
 
+#reset set to lists to ensure no repeated values
+listNewMatchIds=list(setNewMatchIds)
+listDoneMatchIds=list(setDoneMatchIds)
+listNewUserIds=list(setNewUserIds)
+listDoneUserIds=list(setDoneUserIds)
 
 # 1514745000000 is jan 1st 2018
-
+beignTime=1514745000000
 
 flag=1
 i=0
 try:
 	
 
-while len(setNewUserIds)!=0:
+	while len(listNewUserIds)!=0:
 
 
-	for newId in setNewUserIds:
+		for newId in listNewUserIds:
 
 
-		# removing item from new set and inserting into done set
-		currentAccountId=newId
-		setNewUserIds.remove(str(newId))
-		setDoneUserIds.add(str(newId))
+			# removing item from new set and inserting into done set
+			if newId not in listDoneUserIds:
 
-		# getting all match ids from history of a current account of a paticular id
+				currentAccountId=newId
+				listNewUserIds.remove(str(newId))
+				listDoneUserIds.append(str(newId))
 
-		matchList=watcher.match.matchlist_by_account(my_region,currentAccountId)
+			# getting all match ids from history of a current account of a paticular id
 
-		for m in matchList['matches']:
-			#will add the tracing for ids of each match here
-			#setNewMatchIds.add(m)
-			print(m)
+			matchList=watcher.match.matchlist_by_account(my_region,currentAccountId,begin_time=beignTime,season=11,queue=420)
+
+			for m in matchList['matches']:
+
+			#check match id to see if done
+				if tempMatchId not in listDoneMatchIds:	
+				#will add the tracing for ids of each match here
+					tempMatchId=m['gameId']
+					print("current match id is " + str(tempMatchId))
+
+
+				#first we request for json response on match details
+					matchDetails=watcher.match.by_id(my_region,tempMatchId)
+				
+				#for each match we try to get id of all new players
+					for participants in matchDetails['participantIdentities']:
+						
+						tempMatchPlayerID=str(participants['player']['accountId'])
+						
+						if tempMatchPlayerID not in listDoneMatchIds:
+							listNewUserIds.append(str())
+
+					listDoneMatchIds.append(tempMatchId)
+
+
 
 
 
 except KeyboardInterrupt:
-	#refill the files when program is halted
 
-	filePointer=open("newUserIds.txt","w")
+	#set all lists back to sets
+
+	listNewMatchIds=set(setNewMatchIds)
+	listDoneMatchIds=set(setDoneMatchIds)
+	listNewUserIds=set(setNewUserIds)
+	listDoneUserIds=set(setDoneUserIds)
+	#refill the files when program is halted
+	filePointer=open("newUserIdsNa1.txt","w")
 	for lines in setNewUserIds:
 		temp=str(lineL)
 		filePointer.write("%s\n"%temp)
 	filePointer.close()
 
-	filePointer=open("doneUserIds.txt","w")
+	filePointer=open("doneUserIdsNa1.txt","w")
 	for lines in setDoneUserIds:
 		temp=str(lineL)
 		filePointer.write("%s\n"%temp)
 	filePointer.close()
 
-	filePointer=open("newMatchIds.txt","w")
+	filePointer=open("newMatchIdsNa1.txt","w")
 	for lines in setNewMatchIds:
 		temp=str(lineL)
 		filePointer.write("%s\n"%temp)
 	filePointer.close()
 
-	filePointer=open("doneMatchIds.txt","w")
+	filePointer=open("doneMatchIdsNa1.txt","w")
 	for lines in setDoneMatchIds:
 		temp=str(lineL)
 		filePointer.write("%s\n"%temp)
@@ -81,31 +113,39 @@ except KeyboardInterrupt:
 
 
 
+#again untill i put it into a function
+	#set all lists back to sets
+
+	listNewMatchIds=set(setNewMatchIds)
+	listDoneMatchIds=set(setDoneMatchIds)
+	listNewUserIds=set(setNewUserIds)
+	listDoneUserIds=set(setDoneUserIds)
+	#refill the files when program is halted
+	filePointer=open("newUserIdsNa1.txt","w")
+	for lines in setNewUserIds:
+		temp=str(lineL)
+		filePointer.write("%s\n"%temp)
+	filePointer.close()
+
+	filePointer=open("doneUserIdsNa1.txt","w")
+	for lines in setDoneUserIds:
+		temp=str(lineL)
+		filePointer.write("%s\n"%temp)
+	filePointer.close()
+
+	filePointer=open("newMatchIdsNa1.txt","w")
+	for lines in setNewMatchIds:
+		temp=str(lineL)
+		filePointer.write("%s\n"%temp)
+	filePointer.close()
+
+	filePointer=open("doneMatchIdsNa1.txt","w")
+	for lines in setDoneMatchIds:
+		temp=str(lineL)
+		filePointer.write("%s\n"%temp)
+	filePointer.close()
 
 
 
-
-# Error checking requires importing HTTPError from requests
-
-		from requests import HTTPError
-
-		# For Riot's API, the 404 status code indicates that the requested data wasn't found and
-		# should be expected to occur in normal operation, as in the case of a an
-		# invalid summoner name, match ID, etc.
-		#
-		# The 429 status code indicates that the user has sent too many requests
-		# in a given amount of time ("rate limiting").
-
-		try:
-		    response = watcher.summoner.by_name(my_region, 'this_is_probably_not_anyones_summoner_name')
-		except HTTPError as err:
-		    if err.response.status_code == 429:
-		        print('We should retry in {} seconds.'.format(e.headers['Retry-After']))
-		        print('this retry-after is handled by default by the RiotWatcher library')
-		        print('future requests wait until the retry-after time passes')
-		    elif err.response.status_code == 404:
-		        print('Summoner with that ridiculous name not found.')
-		    else:
-		        print("pie")
 
 

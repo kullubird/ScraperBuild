@@ -1,11 +1,12 @@
 from riotwatcher import RiotWatcher
 import json
 
-apiKey='RGAPI-9f43ee03-30db-471a-9bfd-a5cbafe64a1c'
+apiKey='RGAPI-d9d994f9-d853-4fa9-bd02-c7b1cfe3ce89'
 
 #API key setter and region
 watcher = RiotWatcher(apiKey)
 my_region = 'na1'
+beignTime=1514745000000
 
 
 listNewMatchIds=open('newMatchIds.txt').read().splitlines()
@@ -20,7 +21,7 @@ setNewUserIds=set(listNewUserIds)
 setDoneUserIds=set(listDoneUserIds)
 
 currentAccountId=44297600
-matchList=watcher.match.matchlist_by_account(my_region,currentAccountId)
+matchList=watcher.match.matchlist_by_account(my_region,currentAccountId,begin_time=beignTime,season=11,queue=420)
 
 for m in matchList['matches']:
 	tempMatchId=m['gameId']
@@ -31,7 +32,7 @@ for m in matchList['matches']:
 	
 	#for each match we try to get id of all new players
 	for participants in matchDetails['participantIdentities']:
-		print(participants['player']['accountId'])
+		setNewMatchIds.add(participants['player']['accountId'])
 	
 
 filePointer=open("newUserIds.txt","w")

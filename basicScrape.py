@@ -23,6 +23,12 @@ setDoneUserIds=set(listDoneUserIds)
 
 # 1514745000000 is jan 1st 2018
 
+
+flag=1
+i=0
+try:
+	
+
 while len(setNewUserIds)!=0:
 
 
@@ -31,17 +37,47 @@ while len(setNewUserIds)!=0:
 
 		# removing item from new set and inserting into done set
 		currentAccountId=newId
-		setNewUserIds.remove(newId)
-		setDoneUserIds.add(newId)
+		setNewUserIds.remove(str(newId))
+		setDoneUserIds.add(str(newId))
 
 		# getting all match ids from history of a current account of a paticular id
 
 		matchList=watcher.match.matchlist_by_account(my_region,currentAccountId)
 
 		for m in matchList['matches']:
-
 			#will add the tracing for ids of each match here
-			setNewMatchIds.add(m)
+			#setNewMatchIds.add(m)
+			print(m)
+
+
+
+except KeyboardInterrupt:
+	#refill the files when program is halted
+
+	filePointer=open("newUserIds.txt","w")
+	for lines in setNewUserIds:
+		temp=str(lineL)
+		filePointer.write("%s\n"%temp)
+	filePointer.close()
+
+	filePointer=open("doneUserIds.txt","w")
+	for lines in setDoneUserIds:
+		temp=str(lineL)
+		filePointer.write("%s\n"%temp)
+	filePointer.close()
+
+	filePointer=open("newMatchIds.txt","w")
+	for lines in setNewMatchIds:
+		temp=str(lineL)
+		filePointer.write("%s\n"%temp)
+	filePointer.close()
+
+	filePointer=open("doneMatchIds.txt","w")
+	for lines in setDoneMatchIds:
+		temp=str(lineL)
+		filePointer.write("%s\n"%temp)
+	filePointer.close()
+
 
 
 
@@ -51,50 +87,25 @@ while len(setNewUserIds)!=0:
 
 # Error checking requires importing HTTPError from requests
 
-from requests import HTTPError
+		from requests import HTTPError
 
-# For Riot's API, the 404 status code indicates that the requested data wasn't found and
-# should be expected to occur in normal operation, as in the case of a an
-# invalid summoner name, match ID, etc.
-#
-# The 429 status code indicates that the user has sent too many requests
-# in a given amount of time ("rate limiting").
+		# For Riot's API, the 404 status code indicates that the requested data wasn't found and
+		# should be expected to occur in normal operation, as in the case of a an
+		# invalid summoner name, match ID, etc.
+		#
+		# The 429 status code indicates that the user has sent too many requests
+		# in a given amount of time ("rate limiting").
 
-try:
-    response = watcher.summoner.by_name(my_region, 'this_is_probably_not_anyones_summoner_name')
-except HTTPError as err:
-    if err.response.status_code == 429:
-        print('We should retry in {} seconds.'.format(e.headers['Retry-After']))
-        print('this retry-after is handled by default by the RiotWatcher library')
-        print('future requests wait until the retry-after time passes')
-    elif err.response.status_code == 404:
-        print('Summoner with that ridiculous name not found.')
-    else:
-        print("pie")
+		try:
+		    response = watcher.summoner.by_name(my_region, 'this_is_probably_not_anyones_summoner_name')
+		except HTTPError as err:
+		    if err.response.status_code == 429:
+		        print('We should retry in {} seconds.'.format(e.headers['Retry-After']))
+		        print('this retry-after is handled by default by the RiotWatcher library')
+		        print('future requests wait until the retry-after time passes')
+		    elif err.response.status_code == 404:
+		        print('Summoner with that ridiculous name not found.')
+		    else:
+		        print("pie")
 
 
- #refill the files
-
-filePointer=open("newUserIds.txt","w")
-for lines in setNewUserIds:
-	temp=str(lineL)
-	filePointer.write("%s\n"%temp)
-filePointer.close()
-
-filePointer=open("doneUserIds.txt","w")
-for lines in setDoneUserIds:
-	temp=str(lineL)
-	filePointer.write("%s\n"%temp)
-filePointer.close()
-
-filePointer=open("newMatchIds.txt","w")
-for lines in setNewMatchIds:
-	temp=str(lineL)
-	filePointer.write("%s\n"%temp)
-filePointer.close()
-
-filePointer=open("doneMatchIds.txt","w")
-for lines in setDoneMatchIds:
-	temp=str(lineL)
-	filePointer.write("%s\n"%temp)
-filePointer.close()

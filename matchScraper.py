@@ -1,7 +1,7 @@
 from riotwatcher import RiotWatcher
 import json
 
-apiKey='RGAPI-d9d994f9-d853-4fa9-bd02-c7b1cfe3ce89'
+apiKey='RGAPI-900b18c6-a627-43cc-b8fa-345123066124'
 
 #API key setter and region
 watcher = RiotWatcher(apiKey)
@@ -21,11 +21,12 @@ setNewUserIds=set(listNewUserIds)
 setDoneUserIds=set(listDoneUserIds)
 
 currentAccountId=44297600
-matchList=watcher.match.matchlist_by_account(my_region,currentAccountId,begin_time=beignTime,season=11,queue=420)
-
+matchList=watcher.match.matchlist_by_account(my_region,currentAccountId,queue=[420,430,440],begin_time=beignTime,season=11)
+i=0
 for m in matchList['matches']:
+	i=i+1
 	tempMatchId=m['gameId']
-	print("current match id is " + str(tempMatchId))
+	print(str(i)+"th current match id is " + str(tempMatchId))
 
 	#first we request for json response on match details
 	matchDetails=watcher.match.by_id(my_region,tempMatchId)

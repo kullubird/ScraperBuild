@@ -1,10 +1,12 @@
 from riotwatcher import RiotWatcher
 import json
 
-apiKey='RGAPI-900b18c6-a627-43cc-b8fa-345123066124'
+#custom class to store Api Key
+from ApiKey import ApiKey
 
+apiKeyInstance = ApiKey()
 #API key setter and region
-watcher = RiotWatcher(apiKey)
+watcher = RiotWatcher(apiKeyInstance.key)
 my_region = 'na1'
 beignTime=1514745000000
 

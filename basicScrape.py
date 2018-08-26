@@ -1,5 +1,7 @@
 from riotwatcher import RiotWatcher
 import json
+
+#custom class to store Api Key
 from ApiKey import ApiKey
 
 apiKeyInstance = ApiKey()

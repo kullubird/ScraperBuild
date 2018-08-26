@@ -1,10 +1,10 @@
 from riotwatcher import RiotWatcher
 import json
+from ApiKey import ApiKey
 
-apiKey='RGAPI-8c5e43e7-5c8f-4add-a80b-cff788be1bb8'
-
+apiKeyInstance = ApiKey()
 #API key setter and region
-watcher = RiotWatcher(apiKey)
+watcher = RiotWatcher(apiKeyInstance.key)
 my_region = 'na1'
 
 #initilisting lists
@@ -75,7 +75,7 @@ try:
 						tempMatchPlayerID=str(participants['player']['accountId'])
 						
 						if tempMatchPlayerID not in listDoneMatchIds:
-							listNewUserIds.append(tempMatchPlayerID)
+							listNewUserIds.append(tempMatchPlayerID) 	
 
 					listDoneMatchIds.append(tempMatchId)
 

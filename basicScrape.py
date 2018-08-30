@@ -1,5 +1,4 @@
 from riotwatcher import RiotWatcher
-import json
 
 #custom class to store Api Key
 from ApiKey import ApiKey
@@ -79,7 +78,7 @@ try:
 						if tempMatchPlayerID not in listDoneMatchIds:
 							listNewUserIds.append(tempMatchPlayerID) 	
 
-					listDoneMatchIds.append(tempMatchId)
+					listNewMatchIds.append(tempMatchId)
 
 			print("\n\nReached end of iteration")
 

@@ -1,0 +1,5332 @@
+{
+    "frames": [
+        {
+            "timestamp": 0,
+            "participantFrames": {
+                "1": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 1,
+                    "level": 1,
+                    "currentGold": 500,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 293,
+                        "x": 351
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                },
+                "2": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 2,
+                    "level": 1,
+                    "currentGold": 500,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 581,
+                        "x": 561
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                },
+                "3": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 3,
+                    "level": 1,
+                    "currentGold": 500,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 361,
+                        "x": 561
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                },
+                "4": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 4,
+                    "level": 1,
+                    "currentGold": 500,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 471,
+                        "x": 222
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                },
+                "5": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 5,
+                    "level": 1,
+                    "currentGold": 500,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 649,
+                        "x": 311
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                },
+                "6": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 6,
+                    "level": 1,
+                    "currentGold": 500,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 14579,
+                        "x": 14237
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                },
+                "7": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 7,
+                    "level": 1,
+                    "currentGold": 500,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 14223,
+                        "x": 14277
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                },
+                "8": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 8,
+                    "level": 1,
+                    "currentGold": 500,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 14511,
+                        "x": 14486
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                },
+                "9": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 9,
+                    "level": 1,
+                    "currentGold": 500,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 14401,
+                        "x": 14148
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                },
+                "10": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 10,
+                    "level": 1,
+                    "currentGold": 500,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 14291,
+                        "x": 14486
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                }
+            },
+            "events": []
+        },
+        {
+            "timestamp": 60009,
+            "participantFrames": {
+                "1": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 1,
+                    "level": 1,
+                    "currentGold": 0,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 7233,
+                        "x": 6519
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                },
+                "2": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 2,
+                    "level": 1,
+                    "currentGold": 0,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 8914,
+                        "x": 5878
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                },
+                "3": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 3,
+                    "level": 1,
+                    "currentGold": 0,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 5352,
+                        "x": 5124
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                },
+                "4": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 4,
+                    "level": 1,
+                    "currentGold": 0,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 7150,
+                        "x": 6520
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                },
+                "5": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 5,
+                    "level": 1,
+                    "currentGold": 0,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 7530,
+                        "x": 6741
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                },
+                "6": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 6,
+                    "level": 1,
+                    "currentGold": 0,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 6580,
+                        "x": 9917
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                },
+                "7": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 7,
+                    "level": 1,
+                    "currentGold": 0,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 7679,
+                        "x": 7756
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                },
+                "8": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 8,
+                    "level": 1,
+                    "currentGold": 0,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 11723,
+                        "x": 4856
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                },
+                "9": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 9,
+                    "level": 1,
+                    "currentGold": 0,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 11612,
+                        "x": 13407
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                },
+                "10": {
+                    "totalGold": 500,
+                    "teamScore": 0,
+                    "participantId": 10,
+                    "level": 1,
+                    "currentGold": 0,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 10213,
+                        "x": 6281
+                    },
+                    "xp": 0,
+                    "jungleMinionsKilled": 0
+                }
+            },
+            "events": [
+                {
+                    "itemId": 3340,
+                    "timestamp": 5493,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 1056,
+                    "timestamp": 6054,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 6582,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 6846,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 2
+                },
+                {
+                    "itemId": 1041,
+                    "timestamp": 7176,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 3
+                },
+                {
+                    "itemId": 1027,
+                    "timestamp": 7341,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 2
+                },
+                {
+                    "itemId": 2031,
+                    "timestamp": 7704,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 3
+                },
+                {
+                    "itemId": 3302,
+                    "timestamp": 7836,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 6
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 7869,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 7968,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 7
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 7968,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 6
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 8100,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 6
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 8100,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 3
+                },
+                {
+                    "itemId": 2033,
+                    "timestamp": 8298,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 7
+                },
+                {
+                    "itemId": 1041,
+                    "timestamp": 8562,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 10
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 8595,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 6
+                },
+                {
+                    "itemId": 2031,
+                    "timestamp": 8859,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 10
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 9222,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 10
+                },
+                {
+                    "itemId": 2031,
+                    "timestamp": 9255,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 2
+                },
+                {
+                    "itemId": 3301,
+                    "timestamp": 10872,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 5
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 12027,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 5
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 12291,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 5
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 12918,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 5
+                },
+                {
+                    "timestamp": 14766,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 1055,
+                    "timestamp": 15228,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 9
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 15624,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 9
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 15789,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 9
+                },
+                {
+                    "itemId": 1054,
+                    "timestamp": 20772,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 4
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 21762,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 4
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 23049,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 4
+                },
+                {
+                    "itemId": 1054,
+                    "timestamp": 26349,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 26514,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 26514,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 7
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 26712,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 28923,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 3
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 44995,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 50011,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 5
+                },
+                {
+                    "itemId": 3520,
+                    "timestamp": 59382,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 59844,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 2
+                }
+            ]
+        },
+        {
+            "timestamp": 120012,
+            "participantFrames": {
+                "1": {
+                    "totalGold": 597,
+                    "teamScore": 0,
+                    "participantId": 1,
+                    "level": 1,
+                    "currentGold": 97,
+                    "minionsKilled": 4,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 7242,
+                        "x": 7023
+                    },
+                    "xp": 264,
+                    "jungleMinionsKilled": 0
+                },
+                "2": {
+                    "totalGold": 583,
+                    "teamScore": 0,
+                    "participantId": 2,
+                    "level": 1,
+                    "currentGold": 83,
+                    "minionsKilled": 3,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 12759,
+                        "x": 1876
+                    },
+                    "xp": 176,
+                    "jungleMinionsKilled": 0
+                },
+                "3": {
+                    "totalGold": 636,
+                    "teamScore": 0,
+                    "participantId": 3,
+                    "level": 2,
+                    "currentGold": 136,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 6879,
+                        "x": 3417
+                    },
+                    "xp": 310,
+                    "jungleMinionsKilled": 5
+                },
+                "4": {
+                    "totalGold": 583,
+                    "teamScore": 0,
+                    "participantId": 4,
+                    "level": 1,
+                    "currentGold": 83,
+                    "minionsKilled": 3,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1780,
+                        "x": 12102
+                    },
+                    "xp": 115,
+                    "jungleMinionsKilled": 0
+                },
+                "5": {
+                    "totalGold": 547,
+                    "teamScore": 0,
+                    "participantId": 5,
+                    "level": 1,
+                    "currentGold": 47,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1772,
+                        "x": 12293
+                    },
+                    "xp": 115,
+                    "jungleMinionsKilled": 0
+                },
+                "6": {
+                    "totalGold": 542,
+                    "teamScore": 0,
+                    "participantId": 6,
+                    "level": 1,
+                    "currentGold": 42,
+                    "minionsKilled": 1,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1861,
+                        "x": 12563
+                    },
+                    "xp": 115,
+                    "jungleMinionsKilled": 0
+                },
+                "7": {
+                    "totalGold": 625,
+                    "teamScore": 0,
+                    "participantId": 7,
+                    "level": 1,
+                    "currentGold": 125,
+                    "minionsKilled": 6,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 7247,
+                        "x": 7774
+                    },
+                    "xp": 264,
+                    "jungleMinionsKilled": 0
+                },
+                "8": {
+                    "totalGold": 562,
+                    "teamScore": 0,
+                    "participantId": 8,
+                    "level": 1,
+                    "currentGold": 62,
+                    "minionsKilled": 2,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 13044,
+                        "x": 2997
+                    },
+                    "xp": 176,
+                    "jungleMinionsKilled": 0
+                },
+                "9": {
+                    "totalGold": 583,
+                    "teamScore": 0,
+                    "participantId": 9,
+                    "level": 1,
+                    "currentGold": 83,
+                    "minionsKilled": 3,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2580,
+                        "x": 12483
+                    },
+                    "xp": 115,
+                    "jungleMinionsKilled": 0
+                },
+                "10": {
+                    "totalGold": 706,
+                    "teamScore": 0,
+                    "participantId": 10,
+                    "level": 2,
+                    "currentGold": 206,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 6529,
+                        "x": 12029
+                    },
+                    "xp": 450,
+                    "jungleMinionsKilled": 8
+                }
+            },
+            "events": [
+                {
+                    "timestamp": 64204,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 10
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 66382,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 3520,
+                    "timestamp": 66613,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 71695,
+                    "type": "WARD_PLACED",
+                    "creatorId": 8,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 72685,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 74401,
+                    "type": "WARD_PLACED",
+                    "creatorId": 2,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 76678,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 76810,
+                    "type": "WARD_PLACED",
+                    "creatorId": 5,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 76942,
+                    "type": "WARD_PLACED",
+                    "creatorId": 8,
+                    "wardType": "UNDEFINED"
+                },
+                {
+                    "itemId": 3520,
+                    "timestamp": 76942,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 79681,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 4
+                },
+                {
+                    "timestamp": 85720,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 6
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 85918,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 3520,
+                    "timestamp": 86281,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 86446,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 3520,
+                    "timestamp": 87271,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 91528,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 9
+                },
+                {
+                    "timestamp": 104003,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 3
+                },
+                {
+                    "timestamp": 105785,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 10
+                },
+                {
+                    "timestamp": 119517,
+                    "type": "WARD_PLACED",
+                    "creatorId": 4,
+                    "wardType": "YELLOW_TRINKET"
+                }
+            ]
+        },
+        {
+            "timestamp": 180025,
+            "participantFrames": {
+                "1": {
+                    "totalGold": 894,
+                    "teamScore": 0,
+                    "participantId": 1,
+                    "level": 3,
+                    "currentGold": 394,
+                    "minionsKilled": 14,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 8102,
+                        "x": 7896
+                    },
+                    "xp": 945,
+                    "jungleMinionsKilled": 0
+                },
+                "2": {
+                    "totalGold": 933,
+                    "teamScore": 0,
+                    "participantId": 2,
+                    "level": 3,
+                    "currentGold": 433,
+                    "minionsKilled": 14,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 13083,
+                        "x": 2554
+                    },
+                    "xp": 746,
+                    "jungleMinionsKilled": 0
+                },
+                "3": {
+                    "totalGold": 1012,
+                    "teamScore": 0,
+                    "participantId": 3,
+                    "level": 3,
+                    "currentGold": 512,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 10551,
+                        "x": 3514
+                    },
+                    "xp": 878,
+                    "jungleMinionsKilled": 16
+                },
+                "4": {
+                    "totalGold": 1618,
+                    "teamScore": 0,
+                    "participantId": 4,
+                    "level": 2,
+                    "currentGold": 118,
+                    "minionsKilled": 8,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2227,
+                        "x": 12196
+                    },
+                    "xp": 493,
+                    "jungleMinionsKilled": 0
+                },
+                "5": {
+                    "totalGold": 1291,
+                    "teamScore": 0,
+                    "participantId": 5,
+                    "level": 2,
+                    "currentGold": 41,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1374,
+                        "x": 3248
+                    },
+                    "xp": 371,
+                    "jungleMinionsKilled": 0
+                },
+                "6": {
+                    "totalGold": 751,
+                    "teamScore": 0,
+                    "participantId": 6,
+                    "level": 1,
+                    "currentGold": 251,
+                    "minionsKilled": 3,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2416,
+                        "x": 13179
+                    },
+                    "xp": 252,
+                    "jungleMinionsKilled": 0
+                },
+                "7": {
+                    "totalGold": 1281,
+                    "teamScore": 0,
+                    "participantId": 7,
+                    "level": 3,
+                    "currentGold": 56,
+                    "minionsKilled": 11,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 12374,
+                        "x": 13007
+                    },
+                    "xp": 772,
+                    "jungleMinionsKilled": 0
+                },
+                "8": {
+                    "totalGold": 803,
+                    "teamScore": 0,
+                    "participantId": 8,
+                    "level": 2,
+                    "currentGold": 303,
+                    "minionsKilled": 9,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 13700,
+                        "x": 3720
+                    },
+                    "xp": 529,
+                    "jungleMinionsKilled": 0
+                },
+                "9": {
+                    "totalGold": 800,
+                    "teamScore": 0,
+                    "participantId": 9,
+                    "level": 1,
+                    "currentGold": 175,
+                    "minionsKilled": 6,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2947,
+                        "x": 13141
+                    },
+                    "xp": 252,
+                    "jungleMinionsKilled": 0
+                },
+                "10": {
+                    "totalGold": 909,
+                    "teamScore": 0,
+                    "participantId": 10,
+                    "level": 3,
+                    "currentGold": 334,
+                    "minionsKilled": 2,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 8262,
+                        "x": 8653
+                    },
+                    "xp": 718,
+                    "jungleMinionsKilled": 8
+                }
+            },
+            "events": [
+                {
+                    "itemId": 2003,
+                    "timestamp": 120936,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 6
+                },
+                {
+                    "timestamp": 125920,
+                    "type": "WARD_PLACED",
+                    "creatorId": 9,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "killerId": 5,
+                    "victimId": 6,
+                    "timestamp": 126151,
+                    "assistingParticipantIds": [
+                        4
+                    ],
+                    "position": {
+                        "y": 3301,
+                        "x": 13778
+                    },
+                    "type": "CHAMPION_KILL"
+                },
+                {
+                    "timestamp": 126481,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 7
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 126811,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 9
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 128065,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 4
+                },
+                {
+                    "timestamp": 132685,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 1
+                },
+                {
+                    "killerId": 4,
+                    "victimId": 9,
+                    "timestamp": 133180,
+                    "assistingParticipantIds": [
+                        5
+                    ],
+                    "position": {
+                        "y": 1679,
+                        "x": 12645
+                    },
+                    "type": "CHAMPION_KILL"
+                },
+                {
+                    "timestamp": 134302,
+                    "type": "WARD_PLACED",
+                    "creatorId": 10,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 135985,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 5
+                },
+                {
+                    "timestamp": 138460,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 2
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 141269,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 9
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 141467,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 9
+                },
+                {
+                    "killerId": 4,
+                    "victimId": 10,
+                    "timestamp": 142523,
+                    "assistingParticipantIds": [
+                        5
+                    ],
+                    "position": {
+                        "y": 2556,
+                        "x": 13495
+                    },
+                    "type": "CHAMPION_KILL"
+                },
+                {
+                    "timestamp": 144272,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 149816,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 5
+                },
+                {
+                    "timestamp": 150080,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 4
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 152291,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 10
+                },
+                {
+                    "killerId": 7,
+                    "victimId": 4,
+                    "timestamp": 157605,
+                    "assistingParticipantIds": [],
+                    "position": {
+                        "y": 1397,
+                        "x": 12076
+                    },
+                    "type": "CHAMPION_KILL"
+                },
+                {
+                    "timestamp": 159586,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 1
+                },
+                {
+                    "timestamp": 160411,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 3
+                },
+                {
+                    "timestamp": 161836,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 7
+                },
+                {
+                    "itemId": 1043,
+                    "timestamp": 168242,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 4
+                },
+                {
+                    "itemId": 3096,
+                    "timestamp": 172532,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 5
+                },
+                {
+                    "itemId": 3301,
+                    "timestamp": 172532,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 5
+                },
+                {
+                    "itemId": 1082,
+                    "timestamp": 173225,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 7
+                },
+                {
+                    "itemId": 1001,
+                    "timestamp": 173390,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 7
+                },
+                {
+                    "timestamp": 173786,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 2
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 174149,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 7
+                },
+                {
+                    "itemId": 1001,
+                    "timestamp": 174215,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 5
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 179035,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                }
+            ]
+        },
+        {
+            "timestamp": 240032,
+            "participantFrames": {
+                "1": {
+                    "totalGold": 1157,
+                    "teamScore": 0,
+                    "participantId": 1,
+                    "level": 4,
+                    "currentGold": 232,
+                    "minionsKilled": 22,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 7628,
+                        "x": 7395
+                    },
+                    "xp": 1416,
+                    "jungleMinionsKilled": 0
+                },
+                "2": {
+                    "totalGold": 1273,
+                    "teamScore": 0,
+                    "participantId": 2,
+                    "level": 4,
+                    "currentGold": 773,
+                    "minionsKilled": 27,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 13192,
+                        "x": 3679
+                    },
+                    "xp": 1364,
+                    "jungleMinionsKilled": 0
+                },
+                "3": {
+                    "totalGold": 1291,
+                    "teamScore": 0,
+                    "participantId": 3,
+                    "level": 4,
+                    "currentGold": 791,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 12661,
+                        "x": 4593
+                    },
+                    "xp": 1163,
+                    "jungleMinionsKilled": 21
+                },
+                "4": {
+                    "totalGold": 1755,
+                    "teamScore": 0,
+                    "participantId": 4,
+                    "level": 2,
+                    "currentGold": 105,
+                    "minionsKilled": 9,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 3247,
+                        "x": 13426
+                    },
+                    "xp": 571,
+                    "jungleMinionsKilled": 0
+                },
+                "5": {
+                    "totalGold": 1470,
+                    "teamScore": 0,
+                    "participantId": 5,
+                    "level": 3,
+                    "currentGold": 220,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 3438,
+                        "x": 13401
+                    },
+                    "xp": 714,
+                    "jungleMinionsKilled": 0
+                },
+                "6": {
+                    "totalGold": 1180,
+                    "teamScore": 0,
+                    "participantId": 6,
+                    "level": 2,
+                    "currentGold": 680,
+                    "minionsKilled": 3,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 3958,
+                        "x": 13749
+                    },
+                    "xp": 625,
+                    "jungleMinionsKilled": 0
+                },
+                "7": {
+                    "totalGold": 1516,
+                    "teamScore": 0,
+                    "participantId": 7,
+                    "level": 3,
+                    "currentGold": 291,
+                    "minionsKilled": 18,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 7950,
+                        "x": 8473
+                    },
+                    "xp": 1094,
+                    "jungleMinionsKilled": 0
+                },
+                "8": {
+                    "totalGold": 1094,
+                    "teamScore": 0,
+                    "participantId": 8,
+                    "level": 4,
+                    "currentGold": 594,
+                    "minionsKilled": 18,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 13573,
+                        "x": 4198
+                    },
+                    "xp": 1299,
+                    "jungleMinionsKilled": 0
+                },
+                "9": {
+                    "totalGold": 1262,
+                    "teamScore": 0,
+                    "participantId": 9,
+                    "level": 2,
+                    "currentGold": 637,
+                    "minionsKilled": 16,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 3822,
+                        "x": 13641
+                    },
+                    "xp": 625,
+                    "jungleMinionsKilled": 0
+                },
+                "10": {
+                    "totalGold": 1287,
+                    "teamScore": 0,
+                    "participantId": 10,
+                    "level": 4,
+                    "currentGold": 712,
+                    "minionsKilled": 5,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 9844,
+                        "x": 8035
+                    },
+                    "xp": 1312,
+                    "jungleMinionsKilled": 16
+                }
+            },
+            "events": [
+                {
+                    "timestamp": 182947,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 6
+                },
+                {
+                    "timestamp": 184103,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 9
+                },
+                {
+                    "timestamp": 184763,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 10
+                },
+                {
+                    "killerId": 6,
+                    "victimId": 4,
+                    "timestamp": 189977,
+                    "assistingParticipantIds": [
+                        9
+                    ],
+                    "position": {
+                        "y": 1798,
+                        "x": 12252
+                    },
+                    "type": "CHAMPION_KILL"
+                },
+                {
+                    "itemId": 2031,
+                    "timestamp": 200042,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 4
+                },
+                {
+                    "timestamp": 200537,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 1082,
+                    "timestamp": 201329,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 201725,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 6
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 205126,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 1
+                },
+                {
+                    "timestamp": 215395,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 1
+                },
+                {
+                    "timestamp": 216517,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 10
+                },
+                {
+                    "timestamp": 219454,
+                    "type": "WARD_PLACED",
+                    "creatorId": 1,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 219751,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 2
+                },
+                {
+                    "timestamp": 230151,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 5
+                },
+                {
+                    "timestamp": 231372,
+                    "type": "WARD_PLACED",
+                    "creatorId": 1,
+                    "wardType": "CONTROL_WARD"
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 231372,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 1
+                },
+                {
+                    "timestamp": 232167,
+                    "type": "WARD_PLACED",
+                    "creatorId": 6,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 236127,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 238745,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 9
+                },
+                {
+                    "timestamp": 239999,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 3
+                }
+            ]
+        },
+        {
+            "timestamp": 300034,
+            "participantFrames": {
+                "1": {
+                    "totalGold": 1518,
+                    "teamScore": 0,
+                    "participantId": 1,
+                    "level": 5,
+                    "currentGold": 593,
+                    "minionsKilled": 33,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 6892,
+                        "x": 6359
+                    },
+                    "xp": 2038,
+                    "jungleMinionsKilled": 0
+                },
+                "2": {
+                    "totalGold": 1529,
+                    "teamScore": 0,
+                    "participantId": 2,
+                    "level": 4,
+                    "currentGold": 229,
+                    "minionsKilled": 32,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 12109,
+                        "x": 1613
+                    },
+                    "xp": 1662,
+                    "jungleMinionsKilled": 0
+                },
+                "3": {
+                    "totalGold": 1444,
+                    "teamScore": 0,
+                    "participantId": 3,
+                    "level": 4,
+                    "currentGold": 219,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2642,
+                        "x": 8566
+                    },
+                    "xp": 1218,
+                    "jungleMinionsKilled": 22
+                },
+                "4": {
+                    "totalGold": 2081,
+                    "teamScore": 0,
+                    "participantId": 4,
+                    "level": 3,
+                    "currentGold": 431,
+                    "minionsKilled": 18,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2333,
+                        "x": 11982
+                    },
+                    "xp": 880,
+                    "jungleMinionsKilled": 0
+                },
+                "5": {
+                    "totalGold": 1696,
+                    "teamScore": 0,
+                    "participantId": 5,
+                    "level": 3,
+                    "currentGold": 446,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2853,
+                        "x": 12586
+                    },
+                    "xp": 1024,
+                    "jungleMinionsKilled": 0
+                },
+                "6": {
+                    "totalGold": 1393,
+                    "teamScore": 0,
+                    "participantId": 6,
+                    "level": 3,
+                    "currentGold": 893,
+                    "minionsKilled": 5,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 3763,
+                        "x": 13814
+                    },
+                    "xp": 1050,
+                    "jungleMinionsKilled": 0
+                },
+                "7": {
+                    "totalGold": 1920,
+                    "teamScore": 0,
+                    "participantId": 7,
+                    "level": 5,
+                    "currentGold": 695,
+                    "minionsKilled": 31,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 7090,
+                        "x": 7921
+                    },
+                    "xp": 1738,
+                    "jungleMinionsKilled": 0
+                },
+                "8": {
+                    "totalGold": 1413,
+                    "teamScore": 0,
+                    "participantId": 8,
+                    "level": 5,
+                    "currentGold": 328,
+                    "minionsKilled": 26,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 12484,
+                        "x": 2393
+                    },
+                    "xp": 1862,
+                    "jungleMinionsKilled": 0
+                },
+                "9": {
+                    "totalGold": 1652,
+                    "teamScore": 0,
+                    "participantId": 9,
+                    "level": 3,
+                    "currentGold": 1027,
+                    "minionsKilled": 29,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 3890,
+                        "x": 13629
+                    },
+                    "xp": 1109,
+                    "jungleMinionsKilled": 0
+                },
+                "10": {
+                    "totalGold": 1542,
+                    "teamScore": 0,
+                    "participantId": 10,
+                    "level": 4,
+                    "currentGold": 967,
+                    "minionsKilled": 6,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 8328,
+                        "x": 10925
+                    },
+                    "xp": 1666,
+                    "jungleMinionsKilled": 22
+                }
+            },
+            "events": [
+                {
+                    "itemId": 2403,
+                    "timestamp": 240560,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 2403,
+                    "timestamp": 244553,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 7
+                },
+                {
+                    "timestamp": 246402,
+                    "type": "WARD_PLACED",
+                    "creatorId": 5,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 247260,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 7
+                },
+                {
+                    "timestamp": 248883,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 9
+                },
+                {
+                    "timestamp": 248949,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 6
+                },
+                {
+                    "timestamp": 250896,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 1
+                },
+                {
+                    "timestamp": 251292,
+                    "type": "WARD_PLACED",
+                    "creatorId": 9,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 251589,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 4
+                },
+                {
+                    "itemId": 1052,
+                    "timestamp": 256347,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 3070,
+                    "timestamp": 256941,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 2
+                },
+                {
+                    "itemId": 1027,
+                    "timestamp": 256941,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 2
+                },
+                {
+                    "itemId": 2031,
+                    "timestamp": 257469,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 261297,
+                    "type": "WARD_PLACED",
+                    "creatorId": 1,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 263475,
+                    "type": "WARD_PLACED",
+                    "creatorId": 7,
+                    "wardType": "CONTROL_WARD"
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 263475,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 7
+                },
+                {
+                    "timestamp": 266520,
+                    "type": "WARD_PLACED",
+                    "creatorId": 7,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "itemId": 1001,
+                    "timestamp": 267543,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 2
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 271572,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 3706,
+                    "timestamp": 272133,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 3
+                },
+                {
+                    "itemId": 1041,
+                    "timestamp": 272133,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 3
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 273453,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 3
+                },
+                {
+                    "timestamp": 281286,
+                    "type": "WARD_PLACED",
+                    "creatorId": 10,
+                    "wardType": "UNDEFINED"
+                },
+                {
+                    "timestamp": 281286,
+                    "type": "WARD_KILL",
+                    "killerId": 10,
+                    "wardType": "CONTROL_WARD"
+                },
+                {
+                    "timestamp": 281913,
+                    "type": "WARD_PLACED",
+                    "creatorId": 4,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "itemId": 2403,
+                    "timestamp": 284322,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 1
+                },
+                {
+                    "timestamp": 287655,
+                    "type": "WARD_PLACED",
+                    "creatorId": 6,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 288381,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 290002,
+                    "type": "WARD_PLACED",
+                    "creatorId": 2,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "itemId": 2403,
+                    "timestamp": 298516,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 7
+                }
+            ]
+        },
+        {
+            "timestamp": 360053,
+            "participantFrames": {
+                "1": {
+                    "totalGold": 1868,
+                    "teamScore": 0,
+                    "participantId": 1,
+                    "level": 6,
+                    "currentGold": 943,
+                    "minionsKilled": 43,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 7601,
+                        "x": 7758
+                    },
+                    "xp": 2719,
+                    "jungleMinionsKilled": 0
+                },
+                "2": {
+                    "totalGold": 1785,
+                    "teamScore": 0,
+                    "participantId": 2,
+                    "level": 5,
+                    "currentGold": 485,
+                    "minionsKilled": 40,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 11178,
+                        "x": 1810
+                    },
+                    "xp": 2133,
+                    "jungleMinionsKilled": 0
+                },
+                "3": {
+                    "totalGold": 1792,
+                    "teamScore": 0,
+                    "participantId": 3,
+                    "level": 4,
+                    "currentGold": 567,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 3018,
+                        "x": 12137
+                    },
+                    "xp": 1628,
+                    "jungleMinionsKilled": 25
+                },
+                "4": {
+                    "totalGold": 2671,
+                    "teamScore": 0,
+                    "participantId": 4,
+                    "level": 4,
+                    "currentGold": 1021,
+                    "minionsKilled": 26,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2372,
+                        "x": 12220
+                    },
+                    "xp": 1312,
+                    "jungleMinionsKilled": 0
+                },
+                "5": {
+                    "totalGold": 1950,
+                    "teamScore": 0,
+                    "participantId": 5,
+                    "level": 4,
+                    "currentGold": 700,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1333,
+                        "x": 11944
+                    },
+                    "xp": 1358,
+                    "jungleMinionsKilled": 0
+                },
+                "6": {
+                    "totalGold": 1543,
+                    "teamScore": 0,
+                    "participantId": 6,
+                    "level": 4,
+                    "currentGold": 1043,
+                    "minionsKilled": 6,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2786,
+                        "x": 12873
+                    },
+                    "xp": 1396,
+                    "jungleMinionsKilled": 0
+                },
+                "7": {
+                    "totalGold": 2281,
+                    "teamScore": 0,
+                    "participantId": 7,
+                    "level": 5,
+                    "currentGold": 1056,
+                    "minionsKilled": 42,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 3474,
+                        "x": 11923
+                    },
+                    "xp": 2339,
+                    "jungleMinionsKilled": 0
+                },
+                "8": {
+                    "totalGold": 1676,
+                    "teamScore": 0,
+                    "participantId": 8,
+                    "level": 5,
+                    "currentGold": 591,
+                    "minionsKilled": 34,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 11679,
+                        "x": 1490
+                    },
+                    "xp": 2391,
+                    "jungleMinionsKilled": 0
+                },
+                "9": {
+                    "totalGold": 1935,
+                    "teamScore": 0,
+                    "participantId": 9,
+                    "level": 4,
+                    "currentGold": 210,
+                    "minionsKilled": 38,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 13154,
+                        "x": 14306
+                    },
+                    "xp": 1416,
+                    "jungleMinionsKilled": 0
+                },
+                "10": {
+                    "totalGold": 1819,
+                    "teamScore": 0,
+                    "participantId": 10,
+                    "level": 5,
+                    "currentGold": 1244,
+                    "minionsKilled": 6,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2692,
+                        "x": 10778
+                    },
+                    "xp": 1976,
+                    "jungleMinionsKilled": 28
+                }
+            },
+            "events": [
+                {
+                    "timestamp": 300703,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 7
+                },
+                {
+                    "timestamp": 301792,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 9
+                },
+                {
+                    "timestamp": 302947,
+                    "type": "WARD_PLACED",
+                    "creatorId": 8,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 304861,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 10
+                },
+                {
+                    "itemId": 2403,
+                    "timestamp": 307446,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 1
+                },
+                {
+                    "timestamp": 309195,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 6
+                },
+                {
+                    "timestamp": 323652,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 5
+                },
+                {
+                    "itemId": 2403,
+                    "timestamp": 327584,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 7
+                },
+                {
+                    "timestamp": 329960,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 2
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 330719,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 333821,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 3520,
+                    "timestamp": 334910,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 338871,
+                    "type": "WARD_PLACED",
+                    "creatorId": 3,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 339366,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 3520,
+                    "timestamp": 340324,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "killerId": 4,
+                    "victimId": 9,
+                    "timestamp": 344059,
+                    "assistingParticipantIds": [
+                        3,
+                        5
+                    ],
+                    "position": {
+                        "y": 3551,
+                        "x": 13205
+                    },
+                    "type": "CHAMPION_KILL"
+                },
+                {
+                    "itemId": 2403,
+                    "timestamp": 345247,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 347927,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 5
+                },
+                {
+                    "timestamp": 350813,
+                    "skillSlot": 4,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 1
+                },
+                {
+                    "timestamp": 350846,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 4
+                },
+                {
+                    "itemId": 3006,
+                    "timestamp": 358871,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 9
+                }
+            ]
+        },
+        {
+            "timestamp": 420058,
+            "participantFrames": {
+                "1": {
+                    "totalGold": 2165,
+                    "teamScore": 0,
+                    "participantId": 1,
+                    "level": 6,
+                    "currentGold": 305,
+                    "minionsKilled": 53,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 7442,
+                        "x": 7473
+                    },
+                    "xp": 3149,
+                    "jungleMinionsKilled": 0
+                },
+                "2": {
+                    "totalGold": 1963,
+                    "teamScore": 0,
+                    "participantId": 2,
+                    "level": 6,
+                    "currentGold": 138,
+                    "minionsKilled": 43,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 11250,
+                        "x": 1551
+                    },
+                    "xp": 2490,
+                    "jungleMinionsKilled": 0
+                },
+                "3": {
+                    "totalGold": 2026,
+                    "teamScore": 0,
+                    "participantId": 3,
+                    "level": 5,
+                    "currentGold": 801,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 3992,
+                        "x": 7930
+                    },
+                    "xp": 2013,
+                    "jungleMinionsKilled": 29
+                },
+                "4": {
+                    "totalGold": 2943,
+                    "teamScore": 0,
+                    "participantId": 4,
+                    "level": 4,
+                    "currentGold": 118,
+                    "minionsKilled": 32,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1110,
+                        "x": 6664
+                    },
+                    "xp": 1647,
+                    "jungleMinionsKilled": 0
+                },
+                "5": {
+                    "totalGold": 2175,
+                    "teamScore": 0,
+                    "participantId": 5,
+                    "level": 4,
+                    "currentGold": 25,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1535,
+                        "x": 4430
+                    },
+                    "xp": 1614,
+                    "jungleMinionsKilled": 0
+                },
+                "6": {
+                    "totalGold": 2006,
+                    "teamScore": 0,
+                    "participantId": 6,
+                    "level": 5,
+                    "currentGold": 106,
+                    "minionsKilled": 8,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 13524,
+                        "x": 14182
+                    },
+                    "xp": 1817,
+                    "jungleMinionsKilled": 0
+                },
+                "7": {
+                    "totalGold": 2550,
+                    "teamScore": 0,
+                    "participantId": 7,
+                    "level": 6,
+                    "currentGold": 225,
+                    "minionsKilled": 51,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 11912,
+                        "x": 12499
+                    },
+                    "xp": 2810,
+                    "jungleMinionsKilled": 0
+                },
+                "8": {
+                    "totalGold": 2388,
+                    "teamScore": 0,
+                    "participantId": 8,
+                    "level": 7,
+                    "currentGold": 338,
+                    "minionsKilled": 48,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 14309,
+                        "x": 13725
+                    },
+                    "xp": 3377,
+                    "jungleMinionsKilled": 0
+                },
+                "9": {
+                    "totalGold": 2865,
+                    "teamScore": 0,
+                    "participantId": 9,
+                    "level": 5,
+                    "currentGold": 1140,
+                    "minionsKilled": 48,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 3412,
+                        "x": 13289
+                    },
+                    "xp": 1931,
+                    "jungleMinionsKilled": 0
+                },
+                "10": {
+                    "totalGold": 1997,
+                    "teamScore": 0,
+                    "participantId": 10,
+                    "level": 6,
+                    "currentGold": 1422,
+                    "minionsKilled": 9,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2258,
+                        "x": 13372
+                    },
+                    "xp": 2550,
+                    "jungleMinionsKilled": 28
+                }
+            },
+            "events": [
+                {
+                    "timestamp": 362794,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 3
+                },
+                {
+                    "timestamp": 364576,
+                    "skillSlot": 4,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 371812,
+                    "type": "WARD_PLACED",
+                    "creatorId": 3,
+                    "wardType": "CONTROL_WARD"
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 371812,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 3
+                },
+                {
+                    "killerId": 8,
+                    "victimId": 2,
+                    "timestamp": 375211,
+                    "assistingParticipantIds": [],
+                    "position": {
+                        "y": 11422,
+                        "x": 900
+                    },
+                    "type": "CHAMPION_KILL"
+                },
+                {
+                    "itemId": 1027,
+                    "timestamp": 377983,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 2
+                },
+                {
+                    "itemId": 1027,
+                    "timestamp": 378313,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 1
+                },
+                {
+                    "timestamp": 379369,
+                    "afterId": 0,
+                    "type": "ITEM_UNDO",
+                    "participantId": 2,
+                    "beforeId": 1027
+                },
+                {
+                    "itemId": 1052,
+                    "timestamp": 381349,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 2031,
+                    "timestamp": 382768,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 1033,
+                    "timestamp": 384319,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 2
+                },
+                {
+                    "timestamp": 384979,
+                    "skillSlot": 4,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 7
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 385012,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 2
+                },
+                {
+                    "itemId": 2403,
+                    "timestamp": 388906,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 7
+                },
+                {
+                    "killerId": 9,
+                    "victimId": 4,
+                    "timestamp": 390759,
+                    "assistingParticipantIds": [
+                        6
+                    ],
+                    "position": {
+                        "y": 2607,
+                        "x": 13513
+                    },
+                    "type": "CHAMPION_KILL"
+                },
+                {
+                    "killerId": 9,
+                    "victimId": 5,
+                    "timestamp": 396864,
+                    "assistingParticipantIds": [
+                        6
+                    ],
+                    "position": {
+                        "y": 1135,
+                        "x": 11942
+                    },
+                    "type": "CHAMPION_KILL"
+                },
+                {
+                    "timestamp": 398151,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 6
+                },
+                {
+                    "timestamp": 403833,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 1037,
+                    "timestamp": 404097,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 4
+                },
+                {
+                    "itemId": 1001,
+                    "timestamp": 405186,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 4
+                },
+                {
+                    "itemId": 3158,
+                    "timestamp": 406737,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 5
+                },
+                {
+                    "itemId": 1001,
+                    "timestamp": 406737,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 5
+                },
+                {
+                    "itemId": 1004,
+                    "timestamp": 408170,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 5
+                },
+                {
+                    "itemId": 1004,
+                    "timestamp": 408434,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 5
+                },
+                {
+                    "timestamp": 408698,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 9
+                },
+                {
+                    "itemId": 3010,
+                    "timestamp": 408962,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 7
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 410084,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 5
+                },
+                {
+                    "timestamp": 411635,
+                    "skillSlot": 4,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 10
+                },
+                {
+                    "itemId": 3401,
+                    "timestamp": 414803,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 6
+                },
+                {
+                    "itemId": 3302,
+                    "timestamp": 414803,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 6
+                },
+                {
+                    "timestamp": 415166,
+                    "skillSlot": 4,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 2
+                },
+                {
+                    "itemId": 3145,
+                    "timestamp": 417905,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 1052,
+                    "timestamp": 417905,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 2403,
+                    "timestamp": 419192,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 1036,
+                    "timestamp": 419489,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 8
+                }
+            ]
+        },
+        {
+            "timestamp": 480059,
+            "participantFrames": {
+                "1": {
+                    "totalGold": 2545,
+                    "teamScore": 0,
+                    "participantId": 1,
+                    "level": 7,
+                    "currentGold": 685,
+                    "minionsKilled": 65,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 7008,
+                        "x": 7385
+                    },
+                    "xp": 3712,
+                    "jungleMinionsKilled": 0
+                },
+                "2": {
+                    "totalGold": 2336,
+                    "teamScore": 0,
+                    "participantId": 2,
+                    "level": 6,
+                    "currentGold": 511,
+                    "minionsKilled": 54,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 11963,
+                        "x": 1831
+                    },
+                    "xp": 3082,
+                    "jungleMinionsKilled": 0
+                },
+                "3": {
+                    "totalGold": 2434,
+                    "teamScore": 0,
+                    "participantId": 3,
+                    "level": 6,
+                    "currentGold": 1209,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 10557,
+                        "x": 3174
+                    },
+                    "xp": 2695,
+                    "jungleMinionsKilled": 41
+                },
+                "4": {
+                    "totalGold": 3337,
+                    "teamScore": 0,
+                    "participantId": 4,
+                    "level": 5,
+                    "currentGold": 512,
+                    "minionsKilled": 45,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2182,
+                        "x": 11932
+                    },
+                    "xp": 2102,
+                    "jungleMinionsKilled": 0
+                },
+                "5": {
+                    "totalGold": 2399,
+                    "teamScore": 0,
+                    "participantId": 5,
+                    "level": 5,
+                    "currentGold": 249,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2048,
+                        "x": 12177
+                    },
+                    "xp": 1981,
+                    "jungleMinionsKilled": 0
+                },
+                "6": {
+                    "totalGold": 2245,
+                    "teamScore": 0,
+                    "participantId": 6,
+                    "level": 5,
+                    "currentGold": 270,
+                    "minionsKilled": 11,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2215,
+                        "x": 13180
+                    },
+                    "xp": 2043,
+                    "jungleMinionsKilled": 0
+                },
+                "7": {
+                    "totalGold": 2865,
+                    "teamScore": 0,
+                    "participantId": 7,
+                    "level": 7,
+                    "currentGold": 540,
+                    "minionsKilled": 59,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 5950,
+                        "x": 8834
+                    },
+                    "xp": 3432,
+                    "jungleMinionsKilled": 0
+                },
+                "8": {
+                    "totalGold": 2747,
+                    "teamScore": 0,
+                    "participantId": 8,
+                    "level": 7,
+                    "currentGold": 347,
+                    "minionsKilled": 59,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 12900,
+                        "x": 3648
+                    },
+                    "xp": 3881,
+                    "jungleMinionsKilled": 0
+                },
+                "9": {
+                    "totalGold": 3065,
+                    "teamScore": 0,
+                    "participantId": 9,
+                    "level": 5,
+                    "currentGold": 440,
+                    "minionsKilled": 52,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2788,
+                        "x": 13059
+                    },
+                    "xp": 2065,
+                    "jungleMinionsKilled": 0
+                },
+                "10": {
+                    "totalGold": 2319,
+                    "teamScore": 0,
+                    "participantId": 10,
+                    "level": 6,
+                    "currentGold": 344,
+                    "minionsKilled": 9,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 7062,
+                        "x": 9996
+                    },
+                    "xp": 2993,
+                    "jungleMinionsKilled": 36
+                }
+            },
+            "events": [
+                {
+                    "itemId": 2055,
+                    "timestamp": 421246,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 6
+                },
+                {
+                    "timestamp": 421642,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 1001,
+                    "timestamp": 423193,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 10
+                },
+                {
+                    "itemId": 3133,
+                    "timestamp": 423655,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 10
+                },
+                {
+                    "itemId": 1036,
+                    "timestamp": 426696,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 1042,
+                    "timestamp": 429007,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 9
+                },
+                {
+                    "itemId": 1042,
+                    "timestamp": 429205,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 9
+                },
+                {
+                    "itemId": 1042,
+                    "timestamp": 431681,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 9
+                },
+                {
+                    "timestamp": 435905,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 4
+                },
+                {
+                    "timestamp": 454259,
+                    "type": "WARD_PLACED",
+                    "creatorId": 2,
+                    "wardType": "CONTROL_WARD"
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 454259,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 2
+                },
+                {
+                    "timestamp": 454523,
+                    "type": "WARD_PLACED",
+                    "creatorId": 6,
+                    "wardType": "CONTROL_WARD"
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 454523,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 6
+                },
+                {
+                    "timestamp": 456932,
+                    "skillSlot": 4,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 3
+                },
+                {
+                    "timestamp": 458285,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 5
+                },
+                {
+                    "timestamp": 462752,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 7
+                },
+                {
+                    "timestamp": 463709,
+                    "type": "WARD_PLACED",
+                    "creatorId": 2,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 475104,
+                    "type": "WARD_PLACED",
+                    "creatorId": 4,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 475500,
+                    "type": "WARD_PLACED",
+                    "creatorId": 1,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 477711,
+                    "type": "WARD_PLACED",
+                    "creatorId": 9,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 477843,
+                    "type": "WARD_PLACED",
+                    "creatorId": 6,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 479432,
+                    "type": "WARD_PLACED",
+                    "creatorId": 7,
+                    "wardType": "YELLOW_TRINKET"
+                }
+            ]
+        },
+        {
+            "timestamp": 540068,
+            "participantFrames": {
+                "1": {
+                    "totalGold": 2957,
+                    "teamScore": 0,
+                    "participantId": 1,
+                    "level": 8,
+                    "currentGold": 1097,
+                    "minionsKilled": 78,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 7216,
+                        "x": 7445
+                    },
+                    "xp": 4363,
+                    "jungleMinionsKilled": 0
+                },
+                "2": {
+                    "totalGold": 2634,
+                    "teamScore": 0,
+                    "participantId": 2,
+                    "level": 7,
+                    "currentGold": 809,
+                    "minionsKilled": 64,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 11361,
+                        "x": 1598
+                    },
+                    "xp": 3612,
+                    "jungleMinionsKilled": 0
+                },
+                "3": {
+                    "totalGold": 2657,
+                    "teamScore": 0,
+                    "participantId": 3,
+                    "level": 6,
+                    "currentGold": 1432,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2419,
+                        "x": 11824
+                    },
+                    "xp": 2916,
+                    "jungleMinionsKilled": 45
+                },
+                "4": {
+                    "totalGold": 3537,
+                    "teamScore": 0,
+                    "participantId": 4,
+                    "level": 5,
+                    "currentGold": 712,
+                    "minionsKilled": 49,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1883,
+                        "x": 11890
+                    },
+                    "xp": 2293,
+                    "jungleMinionsKilled": 0
+                },
+                "5": {
+                    "totalGold": 2578,
+                    "teamScore": 0,
+                    "participantId": 5,
+                    "level": 5,
+                    "currentGold": 428,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1601,
+                        "x": 11904
+                    },
+                    "xp": 2084,
+                    "jungleMinionsKilled": 0
+                },
+                "6": {
+                    "totalGold": 2488,
+                    "teamScore": 0,
+                    "participantId": 6,
+                    "level": 6,
+                    "currentGold": 513,
+                    "minionsKilled": 14,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2178,
+                        "x": 13011
+                    },
+                    "xp": 2487,
+                    "jungleMinionsKilled": 0
+                },
+                "7": {
+                    "totalGold": 3261,
+                    "teamScore": 0,
+                    "participantId": 7,
+                    "level": 7,
+                    "currentGold": 86,
+                    "minionsKilled": 71,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 13776,
+                        "x": 14140
+                    },
+                    "xp": 4022,
+                    "jungleMinionsKilled": 0
+                },
+                "8": {
+                    "totalGold": 3017,
+                    "teamScore": 0,
+                    "participantId": 8,
+                    "level": 8,
+                    "currentGold": 617,
+                    "minionsKilled": 67,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 12285,
+                        "x": 1923
+                    },
+                    "xp": 4352,
+                    "jungleMinionsKilled": 0
+                },
+                "9": {
+                    "totalGold": 3497,
+                    "teamScore": 0,
+                    "participantId": 9,
+                    "level": 6,
+                    "currentGold": 872,
+                    "minionsKilled": 67,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2736,
+                        "x": 12537
+                    },
+                    "xp": 2509,
+                    "jungleMinionsKilled": 0
+                },
+                "10": {
+                    "totalGold": 2687,
+                    "teamScore": 0,
+                    "participantId": 10,
+                    "level": 7,
+                    "currentGold": 712,
+                    "minionsKilled": 9,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 9715,
+                        "x": 7911
+                    },
+                    "xp": 3611,
+                    "jungleMinionsKilled": 45
+                }
+            },
+            "events": [
+                {
+                    "timestamp": 486395,
+                    "type": "WARD_PLACED",
+                    "creatorId": 8,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 497164,
+                    "type": "WARD_PLACED",
+                    "creatorId": 5,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 498022,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 2
+                },
+                {
+                    "timestamp": 498781,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 10
+                },
+                {
+                    "itemId": 2403,
+                    "timestamp": 511845,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 7
+                },
+                {
+                    "timestamp": 515923,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 2403,
+                    "timestamp": 518101,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 1
+                },
+                {
+                    "timestamp": 518431,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 529172,
+                    "skillSlot": 4,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 9
+                },
+                {
+                    "timestamp": 533462,
+                    "skillSlot": 4,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 6
+                },
+                {
+                    "itemId": 1026,
+                    "timestamp": 535805,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 7
+                }
+            ]
+        },
+        {
+            "timestamp": 600085,
+            "participantFrames": {
+                "1": {
+                    "totalGold": 3247,
+                    "teamScore": 0,
+                    "participantId": 1,
+                    "level": 8,
+                    "currentGold": 362,
+                    "minionsKilled": 88,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 4401,
+                        "x": 8912
+                    },
+                    "xp": 4835,
+                    "jungleMinionsKilled": 0
+                },
+                "2": {
+                    "totalGold": 2903,
+                    "teamScore": 0,
+                    "participantId": 2,
+                    "level": 8,
+                    "currentGold": 1078,
+                    "minionsKilled": 72,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 12038,
+                        "x": 1673
+                    },
+                    "xp": 4146,
+                    "jungleMinionsKilled": 0
+                },
+                "3": {
+                    "totalGold": 2939,
+                    "teamScore": 0,
+                    "participantId": 3,
+                    "level": 7,
+                    "currentGold": 1714,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 3184,
+                        "x": 9922
+                    },
+                    "xp": 3485,
+                    "jungleMinionsKilled": 49
+                },
+                "4": {
+                    "totalGold": 3892,
+                    "teamScore": 0,
+                    "participantId": 4,
+                    "level": 6,
+                    "currentGold": 632,
+                    "minionsKilled": 60,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1482,
+                        "x": 7905
+                    },
+                    "xp": 2532,
+                    "jungleMinionsKilled": 0
+                },
+                "5": {
+                    "totalGold": 2758,
+                    "teamScore": 0,
+                    "participantId": 5,
+                    "level": 5,
+                    "currentGold": 58,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1333,
+                        "x": 7183
+                    },
+                    "xp": 2322,
+                    "jungleMinionsKilled": 0
+                },
+                "6": {
+                    "totalGold": 2672,
+                    "teamScore": 0,
+                    "participantId": 6,
+                    "level": 6,
+                    "currentGold": 697,
+                    "minionsKilled": 17,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 3183,
+                        "x": 12142
+                    },
+                    "xp": 2929,
+                    "jungleMinionsKilled": 0
+                },
+                "7": {
+                    "totalGold": 3487,
+                    "teamScore": 0,
+                    "participantId": 7,
+                    "level": 8,
+                    "currentGold": 312,
+                    "minionsKilled": 77,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 5012,
+                        "x": 8699
+                    },
+                    "xp": 4325,
+                    "jungleMinionsKilled": 0
+                },
+                "8": {
+                    "totalGold": 3386,
+                    "teamScore": 0,
+                    "participantId": 8,
+                    "level": 8,
+                    "currentGold": 986,
+                    "minionsKilled": 78,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 9925,
+                        "x": 3699
+                    },
+                    "xp": 4974,
+                    "jungleMinionsKilled": 0
+                },
+                "9": {
+                    "totalGold": 3870,
+                    "teamScore": 0,
+                    "participantId": 9,
+                    "level": 6,
+                    "currentGold": 1245,
+                    "minionsKilled": 79,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 3273,
+                        "x": 11899
+                    },
+                    "xp": 2922,
+                    "jungleMinionsKilled": 0
+                },
+                "10": {
+                    "totalGold": 3065,
+                    "teamScore": 0,
+                    "participantId": 10,
+                    "level": 8,
+                    "currentGold": 1090,
+                    "minionsKilled": 13,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 4378,
+                        "x": 8800
+                    },
+                    "xp": 4200,
+                    "jungleMinionsKilled": 52
+                }
+            },
+            "events": [
+                {
+                    "itemId": 3802,
+                    "timestamp": 553421,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 1052,
+                    "timestamp": 553421,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 1027,
+                    "timestamp": 553421,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 1052,
+                    "timestamp": 555599,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 557051,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 1
+                },
+                {
+                    "timestamp": 557579,
+                    "skillSlot": 4,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 4
+                },
+                {
+                    "timestamp": 562993,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 7
+                },
+                {
+                    "itemId": 2403,
+                    "timestamp": 568240,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 7
+                },
+                {
+                    "timestamp": 578480,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 3
+                },
+                {
+                    "itemId": 1052,
+                    "timestamp": 579833,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 4
+                },
+                {
+                    "itemId": 3114,
+                    "timestamp": 581781,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 5
+                },
+                {
+                    "itemId": 1004,
+                    "timestamp": 581781,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 5
+                },
+                {
+                    "itemId": 1004,
+                    "timestamp": 581781,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 5
+                },
+                {
+                    "itemId": 3364,
+                    "timestamp": 583465,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 5
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 583465,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 5
+                },
+                {
+                    "timestamp": 590234,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 10
+                },
+                {
+                    "timestamp": 592082,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 2
+                },
+                {
+                    "timestamp": 593138,
+                    "type": "WARD_PLACED",
+                    "creatorId": 7,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 597798,
+                    "type": "WARD_PLACED",
+                    "creatorId": 6,
+                    "wardType": "SIGHT_WARD"
+                },
+                {
+                    "timestamp": 598765,
+                    "type": "WARD_PLACED",
+                    "creatorId": 1,
+                    "wardType": "CONTROL_WARD"
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 598765,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 1
+                },
+                {
+                    "timestamp": 599458,
+                    "type": "WARD_PLACED",
+                    "creatorId": 10,
+                    "wardType": "YELLOW_TRINKET"
+                }
+            ]
+        },
+        {
+            "timestamp": 660088,
+            "participantFrames": {
+                "1": {
+                    "totalGold": 3398,
+                    "teamScore": 0,
+                    "participantId": 1,
+                    "level": 8,
+                    "currentGold": 513,
+                    "minionsKilled": 90,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 7193,
+                        "x": 6889
+                    },
+                    "xp": 4893,
+                    "jungleMinionsKilled": 0
+                },
+                "2": {
+                    "totalGold": 3110,
+                    "teamScore": 0,
+                    "participantId": 2,
+                    "level": 8,
+                    "currentGold": 45,
+                    "minionsKilled": 77,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 461,
+                        "x": 394
+                    },
+                    "xp": 4411,
+                    "jungleMinionsKilled": 0
+                },
+                "3": {
+                    "totalGold": 3062,
+                    "teamScore": 0,
+                    "participantId": 3,
+                    "level": 7,
+                    "currentGold": 212,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1059,
+                        "x": 1323
+                    },
+                    "xp": 3524,
+                    "jungleMinionsKilled": 49
+                },
+                "4": {
+                    "totalGold": 4279,
+                    "teamScore": 0,
+                    "participantId": 4,
+                    "level": 6,
+                    "currentGold": 1019,
+                    "minionsKilled": 72,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2326,
+                        "x": 12036
+                    },
+                    "xp": 3070,
+                    "jungleMinionsKilled": 0
+                },
+                "5": {
+                    "totalGold": 2937,
+                    "teamScore": 0,
+                    "participantId": 5,
+                    "level": 6,
+                    "currentGold": 237,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 3035,
+                        "x": 10372
+                    },
+                    "xp": 2511,
+                    "jungleMinionsKilled": 0
+                },
+                "6": {
+                    "totalGold": 3251,
+                    "teamScore": 0,
+                    "participantId": 6,
+                    "level": 6,
+                    "currentGold": 76,
+                    "minionsKilled": 17,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 13595,
+                        "x": 14242
+                    },
+                    "xp": 3177,
+                    "jungleMinionsKilled": 0
+                },
+                "7": {
+                    "totalGold": 4222,
+                    "teamScore": 0,
+                    "participantId": 7,
+                    "level": 9,
+                    "currentGold": 1047,
+                    "minionsKilled": 83,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 7282,
+                        "x": 7890
+                    },
+                    "xp": 5082,
+                    "jungleMinionsKilled": 0
+                },
+                "8": {
+                    "totalGold": 3951,
+                    "teamScore": 0,
+                    "participantId": 8,
+                    "level": 9,
+                    "currentGold": 1551,
+                    "minionsKilled": 88,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 12374,
+                        "x": 6081
+                    },
+                    "xp": 5900,
+                    "jungleMinionsKilled": 0
+                },
+                "9": {
+                    "totalGold": 4089,
+                    "teamScore": 0,
+                    "participantId": 9,
+                    "level": 6,
+                    "currentGold": 1464,
+                    "minionsKilled": 82,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 4487,
+                        "x": 13653
+                    },
+                    "xp": 3149,
+                    "jungleMinionsKilled": 4
+                },
+                "10": {
+                    "totalGold": 3518,
+                    "teamScore": 0,
+                    "participantId": 10,
+                    "level": 8,
+                    "currentGold": 1543,
+                    "minionsKilled": 14,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 6443,
+                        "x": 12500
+                    },
+                    "xp": 4478,
+                    "jungleMinionsKilled": 52
+                }
+            },
+            "events": [
+                {
+                    "killerId": 10,
+                    "victimId": 1,
+                    "timestamp": 601177,
+                    "assistingParticipantIds": [
+                        7
+                    ],
+                    "position": {
+                        "y": 4410,
+                        "x": 8918
+                    },
+                    "type": "CHAMPION_KILL"
+                },
+                {
+                    "timestamp": 602035,
+                    "type": "WARD_PLACED",
+                    "creatorId": 9,
+                    "wardType": "CONTROL_WARD"
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 602035,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 9
+                },
+                {
+                    "timestamp": 604652,
+                    "type": "WARD_PLACED",
+                    "creatorId": 10,
+                    "wardType": "UNDEFINED"
+                },
+                {
+                    "timestamp": 604652,
+                    "type": "WARD_KILL",
+                    "killerId": 10,
+                    "wardType": "CONTROL_WARD"
+                },
+                {
+                    "timestamp": 605774,
+                    "type": "WARD_KILL",
+                    "killerId": 9,
+                    "wardType": "CONTROL_WARD"
+                },
+                {
+                    "timestamp": 607391,
+                    "type": "WARD_PLACED",
+                    "creatorId": 3,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 613144,
+                    "type": "WARD_PLACED",
+                    "creatorId": 5,
+                    "wardType": "SIGHT_WARD"
+                },
+                {
+                    "timestamp": 617250,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 621608,
+                    "type": "WARD_PLACED",
+                    "creatorId": 5,
+                    "wardType": "SIGHT_WARD"
+                },
+                {
+                    "killerId": 8,
+                    "victimId": 2,
+                    "timestamp": 630834,
+                    "assistingParticipantIds": [],
+                    "position": {
+                        "y": 10894,
+                        "x": 1002
+                    },
+                    "type": "CHAMPION_KILL"
+                },
+                {
+                    "killerId": 7,
+                    "victimId": 3,
+                    "timestamp": 633012,
+                    "assistingParticipantIds": [
+                        6
+                    ],
+                    "position": {
+                        "y": 3199,
+                        "x": 10714
+                    },
+                    "type": "CHAMPION_KILL"
+                },
+                {
+                    "itemId": 3400,
+                    "timestamp": 634596,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 6
+                },
+                {
+                    "itemId": 1402,
+                    "timestamp": 640074,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 3
+                },
+                {
+                    "itemId": 3706,
+                    "timestamp": 640074,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 3
+                },
+                {
+                    "killerId": 9,
+                    "timestamp": 643946,
+                    "position": {
+                        "y": 4416,
+                        "x": 9866
+                    },
+                    "monsterType": "DRAGON",
+                    "monsterSubType": "FIRE_DRAGON",
+                    "type": "ELITE_MONSTER_KILL"
+                },
+                {
+                    "timestamp": 645894,
+                    "skillSlot": 4,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 5
+                },
+                {
+                    "timestamp": 646158,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 7
+                },
+                {
+                    "itemId": 2031,
+                    "timestamp": 648545,
+                    "type": "ITEM_SOLD",
+                    "participantId": 2
+                },
+                {
+                    "timestamp": 653333,
+                    "type": "WARD_PLACED",
+                    "creatorId": 5,
+                    "wardType": "SIGHT_WARD"
+                },
+                {
+                    "itemId": 3802,
+                    "timestamp": 653432,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 2
+                },
+                {
+                    "itemId": 3117,
+                    "timestamp": 655907,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 6
+                },
+                {
+                    "itemId": 1029,
+                    "timestamp": 657929,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 6
+                }
+            ]
+        },
+        {
+            "timestamp": 720094,
+            "participantFrames": {
+                "1": {
+                    "totalGold": 3787,
+                    "teamScore": 0,
+                    "participantId": 1,
+                    "level": 9,
+                    "currentGold": 902,
+                    "minionsKilled": 102,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 6981,
+                        "x": 6489
+                    },
+                    "xp": 5515,
+                    "jungleMinionsKilled": 0
+                },
+                "2": {
+                    "totalGold": 3372,
+                    "teamScore": 0,
+                    "participantId": 2,
+                    "level": 8,
+                    "currentGold": 307,
+                    "minionsKilled": 86,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2374,
+                        "x": 617
+                    },
+                    "xp": 4823,
+                    "jungleMinionsKilled": 0
+                },
+                "3": {
+                    "totalGold": 3370,
+                    "teamScore": 0,
+                    "participantId": 3,
+                    "level": 8,
+                    "currentGold": 520,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 5205,
+                        "x": 5838
+                    },
+                    "xp": 4103,
+                    "jungleMinionsKilled": 57
+                },
+                "4": {
+                    "totalGold": 4422,
+                    "teamScore": 0,
+                    "participantId": 4,
+                    "level": 6,
+                    "currentGold": 172,
+                    "minionsKilled": 73,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1142,
+                        "x": 10307
+                    },
+                    "xp": 3129,
+                    "jungleMinionsKilled": 0
+                },
+                "5": {
+                    "totalGold": 3103,
+                    "teamScore": 0,
+                    "participantId": 5,
+                    "level": 6,
+                    "currentGold": 403,
+                    "minionsKilled": 2,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1493,
+                        "x": 9067
+                    },
+                    "xp": 2548,
+                    "jungleMinionsKilled": 0
+                },
+                "6": {
+                    "totalGold": 3492,
+                    "teamScore": 0,
+                    "participantId": 6,
+                    "level": 7,
+                    "currentGold": 267,
+                    "minionsKilled": 20,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1382,
+                        "x": 11643
+                    },
+                    "xp": 3429,
+                    "jungleMinionsKilled": 0
+                },
+                "7": {
+                    "totalGold": 4603,
+                    "teamScore": 0,
+                    "participantId": 7,
+                    "level": 9,
+                    "currentGold": 243,
+                    "minionsKilled": 95,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 6890,
+                        "x": 7715
+                    },
+                    "xp": 5704,
+                    "jungleMinionsKilled": 0
+                },
+                "8": {
+                    "totalGold": 4527,
+                    "teamScore": 0,
+                    "participantId": 8,
+                    "level": 10,
+                    "currentGold": 537,
+                    "minionsKilled": 97,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 10203,
+                        "x": 980
+                    },
+                    "xp": 6780,
+                    "jungleMinionsKilled": 1
+                },
+                "9": {
+                    "totalGold": 4492,
+                    "teamScore": 0,
+                    "participantId": 9,
+                    "level": 7,
+                    "currentGold": 792,
+                    "minionsKilled": 96,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2144,
+                        "x": 11822
+                    },
+                    "xp": 3578,
+                    "jungleMinionsKilled": 4
+                },
+                "10": {
+                    "totalGold": 3858,
+                    "teamScore": 0,
+                    "participantId": 10,
+                    "level": 8,
+                    "currentGold": 283,
+                    "minionsKilled": 14,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 9838,
+                        "x": 7871
+                    },
+                    "xp": 4985,
+                    "jungleMinionsKilled": 60
+                }
+            },
+            "events": [
+                {
+                    "itemId": 3364,
+                    "timestamp": 660263,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 6
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 660263,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 6
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 660527,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 6
+                },
+                {
+                    "itemId": 3124,
+                    "timestamp": 661421,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 4
+                },
+                {
+                    "itemId": 1052,
+                    "timestamp": 661421,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 4
+                },
+                {
+                    "itemId": 1043,
+                    "timestamp": 661421,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 4
+                },
+                {
+                    "itemId": 1037,
+                    "timestamp": 661421,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 4
+                },
+                {
+                    "timestamp": 662246,
+                    "type": "WARD_KILL",
+                    "killerId": 5,
+                    "wardType": "CONTROL_WARD"
+                },
+                {
+                    "timestamp": 662477,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 9
+                },
+                {
+                    "timestamp": 669076,
+                    "type": "WARD_KILL",
+                    "killerId": 5,
+                    "wardType": "UNDEFINED"
+                },
+                {
+                    "timestamp": 670834,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 1
+                },
+                {
+                    "timestamp": 671989,
+                    "type": "WARD_PLACED",
+                    "creatorId": 2,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 672616,
+                    "type": "WARD_PLACED",
+                    "creatorId": 1,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "itemId": 2031,
+                    "timestamp": 674299,
+                    "type": "ITEM_SOLD",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 3086,
+                    "timestamp": 675662,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 9
+                },
+                {
+                    "itemId": 1042,
+                    "timestamp": 675662,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 9
+                },
+                {
+                    "itemId": 3146,
+                    "timestamp": 676389,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 1036,
+                    "timestamp": 676389,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 1036,
+                    "timestamp": 676389,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 3145,
+                    "timestamp": 676389,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 3363,
+                    "timestamp": 678831,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 3340,
+                    "timestamp": 678831,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 679260,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 9
+                },
+                {
+                    "itemId": 3027,
+                    "timestamp": 680193,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 7
+                },
+                {
+                    "itemId": 3010,
+                    "timestamp": 680193,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 7
+                },
+                {
+                    "itemId": 1026,
+                    "timestamp": 680193,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 7
+                },
+                {
+                    "itemId": 1052,
+                    "timestamp": 684582,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 7
+                },
+                {
+                    "killerId": 8,
+                    "victimId": 2,
+                    "timestamp": 687257,
+                    "assistingParticipantIds": [],
+                    "position": {
+                        "y": 10712,
+                        "x": 810
+                    },
+                    "type": "CHAMPION_KILL"
+                },
+                {
+                    "timestamp": 694038,
+                    "type": "WARD_PLACED",
+                    "creatorId": 6,
+                    "wardType": "SIGHT_WARD"
+                },
+                {
+                    "timestamp": 694302,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 1400,
+                    "timestamp": 694401,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 10
+                },
+                {
+                    "itemId": 3133,
+                    "timestamp": 694401,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 10
+                },
+                {
+                    "itemId": 1041,
+                    "timestamp": 694401,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 10
+                },
+                {
+                    "itemId": 1036,
+                    "timestamp": 695601,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 10
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 700023,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 10
+                },
+                {
+                    "timestamp": 701706,
+                    "type": "WARD_PLACED",
+                    "creatorId": 4,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 702762,
+                    "type": "WARD_PLACED",
+                    "creatorId": 6,
+                    "wardType": "SIGHT_WARD"
+                },
+                {
+                    "timestamp": 708999,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 6
+                },
+                {
+                    "timestamp": 717338,
+                    "type": "WARD_PLACED",
+                    "creatorId": 6,
+                    "wardType": "SIGHT_WARD"
+                }
+            ]
+        },
+        {
+            "timestamp": 780140,
+            "participantFrames": {
+                "1": {
+                    "totalGold": 4084,
+                    "teamScore": 0,
+                    "participantId": 1,
+                    "level": 9,
+                    "currentGold": 1199,
+                    "minionsKilled": 112,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 6208,
+                        "x": 6585
+                    },
+                    "xp": 6045,
+                    "jungleMinionsKilled": 0
+                },
+                "2": {
+                    "totalGold": 3515,
+                    "teamScore": 0,
+                    "participantId": 2,
+                    "level": 8,
+                    "currentGold": 100,
+                    "minionsKilled": 87,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 6612,
+                        "x": 1682
+                    },
+                    "xp": 4941,
+                    "jungleMinionsKilled": 0
+                },
+                "3": {
+                    "totalGold": 3592,
+                    "teamScore": 0,
+                    "participantId": 3,
+                    "level": 8,
+                    "currentGold": 742,
+                    "minionsKilled": 0,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 550,
+                        "x": 933
+                    },
+                    "xp": 4384,
+                    "jungleMinionsKilled": 61
+                },
+                "4": {
+                    "totalGold": 4839,
+                    "teamScore": 0,
+                    "participantId": 4,
+                    "level": 7,
+                    "currentGold": 589,
+                    "minionsKilled": 87,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 5811,
+                        "x": 5327
+                    },
+                    "xp": 3604,
+                    "jungleMinionsKilled": 0
+                },
+                "5": {
+                    "totalGold": 3372,
+                    "teamScore": 0,
+                    "participantId": 5,
+                    "level": 6,
+                    "currentGold": 672,
+                    "minionsKilled": 2,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 5642,
+                        "x": 5972
+                    },
+                    "xp": 2978,
+                    "jungleMinionsKilled": 0
+                },
+                "6": {
+                    "totalGold": 3749,
+                    "teamScore": 0,
+                    "participantId": 6,
+                    "level": 7,
+                    "currentGold": 524,
+                    "minionsKilled": 20,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 4975,
+                        "x": 7575
+                    },
+                    "xp": 3606,
+                    "jungleMinionsKilled": 0
+                },
+                "7": {
+                    "totalGold": 4982,
+                    "teamScore": 0,
+                    "participantId": 7,
+                    "level": 10,
+                    "currentGold": 622,
+                    "minionsKilled": 106,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 5878,
+                        "x": 7549
+                    },
+                    "xp": 6253,
+                    "jungleMinionsKilled": 0
+                },
+                "8": {
+                    "totalGold": 5726,
+                    "teamScore": 0,
+                    "participantId": 8,
+                    "level": 11,
+                    "currentGold": 1736,
+                    "minionsKilled": 114,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 6786,
+                        "x": 1212
+                    },
+                    "xp": 7877,
+                    "jungleMinionsKilled": 1
+                },
+                "9": {
+                    "totalGold": 4783,
+                    "teamScore": 0,
+                    "participantId": 9,
+                    "level": 7,
+                    "currentGold": 1083,
+                    "minionsKilled": 97,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 3321,
+                        "x": 9817
+                    },
+                    "xp": 3785,
+                    "jungleMinionsKilled": 4
+                },
+                "10": {
+                    "totalGold": 4469,
+                    "teamScore": 0,
+                    "participantId": 10,
+                    "level": 9,
+                    "currentGold": 894,
+                    "minionsKilled": 14,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 5210,
+                        "x": 7307
+                    },
+                    "xp": 5458,
+                    "jungleMinionsKilled": 65
+                }
+            },
+            "events": [
+                {
+                    "timestamp": 721727,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 4
+                },
+                {
+                    "timestamp": 724831,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 10
+                },
+                {
+                    "timestamp": 732370,
+                    "type": "WARD_PLACED",
+                    "creatorId": 9,
+                    "wardType": "CONTROL_WARD"
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 732370,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 9
+                },
+                {
+                    "timestamp": 735026,
+                    "type": "WARD_KILL",
+                    "killerId": 9,
+                    "wardType": "SIGHT_WARD"
+                },
+                {
+                    "timestamp": 739690,
+                    "type": "WARD_PLACED",
+                    "creatorId": 5,
+                    "wardType": "SIGHT_WARD"
+                },
+                {
+                    "killerId": 0,
+                    "timestamp": 740780,
+                    "buildingType": "TOWER_BUILDING",
+                    "towerType": "OUTER_TURRET",
+                    "teamId": 100,
+                    "assistingParticipantIds": [],
+                    "position": {
+                        "y": 10441,
+                        "x": 981
+                    },
+                    "type": "BUILDING_KILL",
+                    "laneType": "TOP_LANE"
+                },
+                {
+                    "timestamp": 745446,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 3
+                },
+                {
+                    "killerId": 10,
+                    "victimId": 3,
+                    "timestamp": 750280,
+                    "assistingParticipantIds": [
+                        9,
+                        6
+                    ],
+                    "position": {
+                        "y": 4216,
+                        "x": 7972
+                    },
+                    "type": "CHAMPION_KILL"
+                },
+                {
+                    "timestamp": 754989,
+                    "type": "WARD_PLACED",
+                    "creatorId": 8,
+                    "wardType": "BLUE_TRINKET"
+                },
+                {
+                    "itemId": 2003,
+                    "timestamp": 756819,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 6
+                },
+                {
+                    "timestamp": 760280,
+                    "skillSlot": 4,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 8
+                },
+                {
+                    "killerId": 8,
+                    "victimId": 2,
+                    "timestamp": 763113,
+                    "assistingParticipantIds": [],
+                    "position": {
+                        "y": 6612,
+                        "x": 1682
+                    },
+                    "type": "CHAMPION_KILL"
+                },
+                {
+                    "timestamp": 764217,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 7
+                },
+                {
+                    "timestamp": 768296,
+                    "type": "WARD_PLACED",
+                    "creatorId": 5,
+                    "wardType": "SIGHT_WARD"
+                },
+                {
+                    "timestamp": 768332,
+                    "type": "WARD_PLACED",
+                    "creatorId": 9,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "itemId": 3111,
+                    "timestamp": 768662,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 2
+                },
+                {
+                    "itemId": 1001,
+                    "timestamp": 768662,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 2
+                },
+                {
+                    "itemId": 1033,
+                    "timestamp": 768662,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 2
+                },
+                {
+                    "timestamp": 769916,
+                    "type": "WARD_PLACED",
+                    "creatorId": 10,
+                    "wardType": "YELLOW_TRINKET"
+                }
+            ]
+        },
+        {
+            "timestamp": 840154,
+            "participantFrames": {
+                "1": {
+                    "totalGold": 4459,
+                    "teamScore": 0,
+                    "participantId": 1,
+                    "level": 10,
+                    "currentGold": 974,
+                    "minionsKilled": 122,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 559,
+                        "x": 736
+                    },
+                    "xp": 6484,
+                    "jungleMinionsKilled": 0
+                },
+                "2": {
+                    "totalGold": 3887,
+                    "teamScore": 0,
+                    "participantId": 2,
+                    "level": 9,
+                    "currentGold": 472,
+                    "minionsKilled": 98,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 12965,
+                        "x": 3693
+                    },
+                    "xp": 5445,
+                    "jungleMinionsKilled": 0
+                },
+                "3": {
+                    "totalGold": 3730,
+                    "teamScore": 0,
+                    "participantId": 3,
+                    "level": 8,
+                    "currentGold": 880,
+                    "minionsKilled": 1,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 10364,
+                        "x": 3523
+                    },
+                    "xp": 4402,
+                    "jungleMinionsKilled": 61
+                },
+                "4": {
+                    "totalGold": 5144,
+                    "teamScore": 0,
+                    "participantId": 4,
+                    "level": 8,
+                    "currentGold": 594,
+                    "minionsKilled": 99,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2267,
+                        "x": 8815
+                    },
+                    "xp": 4207,
+                    "jungleMinionsKilled": 0
+                },
+                "5": {
+                    "totalGold": 3552,
+                    "teamScore": 0,
+                    "participantId": 5,
+                    "level": 6,
+                    "currentGold": 341,
+                    "minionsKilled": 2,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1736,
+                        "x": 10647
+                    },
+                    "xp": 3177,
+                    "jungleMinionsKilled": 0
+                },
+                "6": {
+                    "totalGold": 3958,
+                    "teamScore": 0,
+                    "participantId": 6,
+                    "level": 7,
+                    "currentGold": 58,
+                    "minionsKilled": 21,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 11030,
+                        "x": 13280
+                    },
+                    "xp": 3749,
+                    "jungleMinionsKilled": 0
+                },
+                "7": {
+                    "totalGold": 5318,
+                    "teamScore": 0,
+                    "participantId": 7,
+                    "level": 10,
+                    "currentGold": 158,
+                    "minionsKilled": 115,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 12291,
+                        "x": 12909
+                    },
+                    "xp": 6622,
+                    "jungleMinionsKilled": 0
+                },
+                "8": {
+                    "totalGold": 6205,
+                    "teamScore": 0,
+                    "participantId": 8,
+                    "level": 11,
+                    "currentGold": 2215,
+                    "minionsKilled": 115,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 12743,
+                        "x": 3116
+                    },
+                    "xp": 8476,
+                    "jungleMinionsKilled": 5
+                },
+                "9": {
+                    "totalGold": 5120,
+                    "teamScore": 0,
+                    "participantId": 9,
+                    "level": 8,
+                    "currentGold": 445,
+                    "minionsKilled": 106,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 7923,
+                        "x": 13697
+                    },
+                    "xp": 4230,
+                    "jungleMinionsKilled": 4
+                },
+                "10": {
+                    "totalGold": 4831,
+                    "teamScore": 0,
+                    "participantId": 10,
+                    "level": 10,
+                    "currentGold": 1256,
+                    "minionsKilled": 15,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 8303,
+                        "x": 11074
+                    },
+                    "xp": 6144,
+                    "jungleMinionsKilled": 74
+                }
+            },
+            "events": [
+                {
+                    "timestamp": 792106,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 3363,
+                    "timestamp": 796902,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 797003,
+                    "type": "WARD_PLACED",
+                    "creatorId": 8,
+                    "wardType": "UNDEFINED"
+                },
+                {
+                    "itemId": 3520,
+                    "timestamp": 797003,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 802464,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 9
+                },
+                {
+                    "itemId": 1042,
+                    "timestamp": 811526,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 4
+                },
+                {
+                    "itemId": 1042,
+                    "timestamp": 811761,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 4
+                },
+                {
+                    "itemId": 1052,
+                    "timestamp": 812190,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 5
+                },
+                {
+                    "itemId": 3085,
+                    "timestamp": 812488,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 9
+                },
+                {
+                    "itemId": 1042,
+                    "timestamp": 812488,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 9
+                },
+                {
+                    "itemId": 3086,
+                    "timestamp": 812488,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 9
+                },
+                {
+                    "itemId": 1042,
+                    "timestamp": 812488,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 9
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 814995,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 5
+                },
+                {
+                    "timestamp": 817346,
+                    "afterId": 0,
+                    "type": "ITEM_UNDO",
+                    "participantId": 4,
+                    "beforeId": 1042
+                },
+                {
+                    "timestamp": 818755,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 2
+                },
+                {
+                    "itemId": 3363,
+                    "timestamp": 822055,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 3520,
+                    "timestamp": 824203,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 824467,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 9
+                },
+                {
+                    "timestamp": 829203,
+                    "type": "WARD_KILL",
+                    "killerId": 3,
+                    "wardType": "BLUE_TRINKET"
+                },
+                {
+                    "itemId": 3111,
+                    "timestamp": 831123,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 7
+                },
+                {
+                    "itemId": 1001,
+                    "timestamp": 831123,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 7
+                },
+                {
+                    "itemId": 3024,
+                    "timestamp": 833206,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 6
+                },
+                {
+                    "itemId": 1029,
+                    "timestamp": 833206,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 6
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 834922,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 6
+                },
+                {
+                    "timestamp": 836176,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 4
+                },
+                {
+                    "itemId": 3158,
+                    "timestamp": 837172,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 2422,
+                    "timestamp": 837172,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 1
+                },
+                {
+                    "killerId": 8,
+                    "victimId": 2,
+                    "timestamp": 839626,
+                    "assistingParticipantIds": [],
+                    "position": {
+                        "y": 12965,
+                        "x": 3693
+                    },
+                    "type": "CHAMPION_KILL"
+                }
+            ]
+        },
+        {
+            "timestamp": 900162,
+            "participantFrames": {
+                "1": {
+                    "totalGold": 4770,
+                    "teamScore": 0,
+                    "participantId": 1,
+                    "level": 10,
+                    "currentGold": 495,
+                    "minionsKilled": 133,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 2561,
+                        "x": 7665
+                    },
+                    "xp": 7106,
+                    "jungleMinionsKilled": 0
+                },
+                "2": {
+                    "totalGold": 4191,
+                    "teamScore": 0,
+                    "participantId": 2,
+                    "level": 9,
+                    "currentGold": 776,
+                    "minionsKilled": 98,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 6080,
+                        "x": 3950
+                    },
+                    "xp": 5981,
+                    "jungleMinionsKilled": 2
+                },
+                "3": {
+                    "totalGold": 4672,
+                    "teamScore": 0,
+                    "participantId": 3,
+                    "level": 9,
+                    "currentGold": 122,
+                    "minionsKilled": 5,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 12334,
+                        "x": 1864
+                    },
+                    "xp": 5173,
+                    "jungleMinionsKilled": 61
+                },
+                "4": {
+                    "totalGold": 5488,
+                    "teamScore": 0,
+                    "participantId": 4,
+                    "level": 8,
+                    "currentGold": 138,
+                    "minionsKilled": 99,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 758,
+                        "x": 7972
+                    },
+                    "xp": 4648,
+                    "jungleMinionsKilled": 6
+                },
+                "5": {
+                    "totalGold": 3686,
+                    "teamScore": 0,
+                    "participantId": 5,
+                    "level": 7,
+                    "currentGold": 476,
+                    "minionsKilled": 2,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1094,
+                        "x": 8165
+                    },
+                    "xp": 3283,
+                    "jungleMinionsKilled": 0
+                },
+                "6": {
+                    "totalGold": 4381,
+                    "teamScore": 0,
+                    "participantId": 6,
+                    "level": 8,
+                    "currentGold": 481,
+                    "minionsKilled": 26,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1241,
+                        "x": 10529
+                    },
+                    "xp": 4154,
+                    "jungleMinionsKilled": 0
+                },
+                "7": {
+                    "totalGold": 5770,
+                    "teamScore": 0,
+                    "participantId": 7,
+                    "level": 10,
+                    "currentGold": 610,
+                    "minionsKilled": 126,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1863,
+                        "x": 11138
+                    },
+                    "xp": 7244,
+                    "jungleMinionsKilled": 0
+                },
+                "8": {
+                    "totalGold": 6419,
+                    "teamScore": 0,
+                    "participantId": 8,
+                    "level": 11,
+                    "currentGold": 104,
+                    "minionsKilled": 118,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 10214,
+                        "x": 10005
+                    },
+                    "xp": 8564,
+                    "jungleMinionsKilled": 5
+                },
+                "9": {
+                    "totalGold": 5684,
+                    "teamScore": 0,
+                    "participantId": 9,
+                    "level": 8,
+                    "currentGold": 1009,
+                    "minionsKilled": 120,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 1182,
+                        "x": 10805
+                    },
+                    "xp": 4724,
+                    "jungleMinionsKilled": 4
+                },
+                "10": {
+                    "totalGold": 5522,
+                    "teamScore": 0,
+                    "participantId": 10,
+                    "level": 10,
+                    "currentGold": 1947,
+                    "minionsKilled": 16,
+                    "dominionScore": 0,
+                    "position": {
+                        "y": 13410,
+                        "x": 3605
+                    },
+                    "xp": 7258,
+                    "jungleMinionsKilled": 81
+                }
+            },
+            "events": [
+                {
+                    "timestamp": 840286,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 10
+                },
+                {
+                    "itemId": 2031,
+                    "timestamp": 840913,
+                    "type": "ITEM_SOLD",
+                    "participantId": 1
+                },
+                {
+                    "itemId": 1026,
+                    "timestamp": 841738,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 1
+                },
+                {
+                    "killerId": 3,
+                    "victimId": 8,
+                    "timestamp": 847721,
+                    "assistingParticipantIds": [
+                        2
+                    ],
+                    "position": {
+                        "y": 12260,
+                        "x": 1205
+                    },
+                    "type": "CHAMPION_KILL"
+                },
+                {
+                    "timestamp": 852014,
+                    "type": "WARD_PLACED",
+                    "creatorId": 5,
+                    "wardType": "SIGHT_WARD"
+                },
+                {
+                    "itemId": 3140,
+                    "timestamp": 856683,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 859301,
+                    "type": "WARD_PLACED",
+                    "creatorId": 7,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 867594,
+                    "type": "WARD_PLACED",
+                    "creatorId": 6,
+                    "wardType": "SIGHT_WARD"
+                },
+                {
+                    "timestamp": 870019,
+                    "type": "WARD_PLACED",
+                    "creatorId": 6,
+                    "wardType": "SIGHT_WARD"
+                },
+                {
+                    "itemId": 1052,
+                    "timestamp": 871141,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 1028,
+                    "timestamp": 871636,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 3006,
+                    "timestamp": 876332,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 4
+                },
+                {
+                    "itemId": 1001,
+                    "timestamp": 876332,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 4
+                },
+                {
+                    "itemId": 1042,
+                    "timestamp": 876332,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 4
+                },
+                {
+                    "timestamp": 877058,
+                    "afterId": 0,
+                    "type": "ITEM_UNDO",
+                    "participantId": 8,
+                    "beforeId": 1028
+                },
+                {
+                    "itemId": 1042,
+                    "timestamp": 877355,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 4
+                },
+                {
+                    "timestamp": 877355,
+                    "afterId": 0,
+                    "type": "ITEM_UNDO",
+                    "participantId": 8,
+                    "beforeId": 1052
+                },
+                {
+                    "itemId": 3111,
+                    "timestamp": 879874,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 2422,
+                    "timestamp": 879874,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 883476,
+                    "type": "WARD_PLACED",
+                    "creatorId": 10,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "itemId": 2031,
+                    "timestamp": 883905,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 884235,
+                    "type": "WARD_PLACED",
+                    "creatorId": 7,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 885329,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 886154,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 6
+                },
+                {
+                    "killerId": 10,
+                    "victimId": 3,
+                    "timestamp": 887903,
+                    "assistingParticipantIds": [],
+                    "position": {
+                        "y": 12334,
+                        "x": 1864
+                    },
+                    "type": "CHAMPION_KILL"
+                },
+                {
+                    "timestamp": 889686,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 5
+                },
+                {
+                    "timestamp": 891438,
+                    "type": "WARD_PLACED",
+                    "creatorId": 1,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "itemId": 3145,
+                    "timestamp": 893616,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 3
+                },
+                {
+                    "itemId": 1001,
+                    "timestamp": 894507,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 3
+                },
+                {
+                    "itemId": 1082,
+                    "timestamp": 894969,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 3
+                },
+                {
+                    "killerId": 9,
+                    "timestamp": 899826,
+                    "buildingType": "TOWER_BUILDING",
+                    "towerType": "OUTER_TURRET",
+                    "teamId": 100,
+                    "assistingParticipantIds": [
+                        6
+                    ],
+                    "position": {
+                        "y": 1029,
+                        "x": 10504
+                    },
+                    "type": "BUILDING_KILL",
+                    "laneType": "BOT_LANE"
+                }
+            ]
+        },
+        {
+            "timestamp": 960162,
+            "participantFrames": {
+                "1": {
+                    "totalGold": 4919,
+                    "participantId": 1,
+                    "level": 10,
+                    "currentGold": 584,
+                    "minionsKilled": 135,
+                    "xp": 7283,
+                    "jungleMinionsKilled": 0
+                },
+                "2": {
+                    "totalGold": 4618,
+                    "participantId": 2,
+                    "level": 10,
+                    "currentGold": 93,
+                    "minionsKilled": 109,
+                    "xp": 6593,
+                    "jungleMinionsKilled": 4
+                },
+                "3": {
+                    "totalGold": 4779,
+                    "participantId": 3,
+                    "level": 9,
+                    "currentGold": 229,
+                    "minionsKilled": 5,
+                    "xp": 5276,
+                    "jungleMinionsKilled": 61
+                },
+                "4": {
+                    "totalGold": 5819,
+                    "participantId": 4,
+                    "level": 9,
+                    "currentGold": 469,
+                    "minionsKilled": 112,
+                    "xp": 5111,
+                    "jungleMinionsKilled": 6
+                },
+                "5": {
+                    "totalGold": 3849,
+                    "participantId": 5,
+                    "level": 7,
+                    "currentGold": 639,
+                    "minionsKilled": 2,
+                    "xp": 3678,
+                    "jungleMinionsKilled": 0
+                },
+                "6": {
+                    "totalGold": 4515,
+                    "participantId": 6,
+                    "level": 8,
+                    "currentGold": 165,
+                    "minionsKilled": 27,
+                    "xp": 4327,
+                    "jungleMinionsKilled": 0
+                },
+                "7": {
+                    "totalGold": 5976,
+                    "participantId": 7,
+                    "level": 11,
+                    "currentGold": 816,
+                    "minionsKilled": 131,
+                    "xp": 7733,
+                    "jungleMinionsKilled": 0
+                },
+                "8": {
+                    "totalGold": 6950,
+                    "participantId": 8,
+                    "level": 12,
+                    "currentGold": 575,
+                    "minionsKilled": 127,
+                    "xp": 9290,
+                    "jungleMinionsKilled": 5
+                },
+                "9": {
+                    "totalGold": 5896,
+                    "participantId": 9,
+                    "level": 8,
+                    "currentGold": 1221,
+                    "minionsKilled": 126,
+                    "xp": 4897,
+                    "jungleMinionsKilled": 4
+                },
+                "10": {
+                    "totalGold": 5741,
+                    "participantId": 10,
+                    "level": 11,
+                    "currentGold": 416,
+                    "minionsKilled": 16,
+                    "xp": 7586,
+                    "jungleMinionsKilled": 85
+                }
+            },
+            "events": [
+                {
+                    "timestamp": 902934,
+                    "skillSlot": 4,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 10
+                },
+                {
+                    "itemId": 3140,
+                    "timestamp": 908911,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 10
+                },
+                {
+                    "timestamp": 910771,
+                    "skillSlot": 2,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 912850,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 3
+                },
+                {
+                    "itemId": 2031,
+                    "timestamp": 915358,
+                    "type": "ITEM_SOLD",
+                    "participantId": 10
+                },
+                {
+                    "itemId": 1033,
+                    "timestamp": 916226,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 10
+                },
+                {
+                    "timestamp": 918276,
+                    "type": "WARD_PLACED",
+                    "creatorId": 4,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "itemId": 1033,
+                    "timestamp": 918772,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 6
+                },
+                {
+                    "killerId": 8,
+                    "victimId": 1,
+                    "timestamp": 921870,
+                    "assistingParticipantIds": [],
+                    "position": {
+                        "y": 5207,
+                        "x": 5017
+                    },
+                    "type": "CHAMPION_KILL"
+                },
+                {
+                    "timestamp": 922299,
+                    "type": "WARD_PLACED",
+                    "creatorId": 9,
+                    "wardType": "YELLOW_TRINKET"
+                },
+                {
+                    "timestamp": 925767,
+                    "type": "WARD_PLACED",
+                    "creatorId": 5,
+                    "wardType": "SIGHT_WARD"
+                },
+                {
+                    "timestamp": 929968,
+                    "skillSlot": 3,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 2
+                },
+                {
+                    "timestamp": 930661,
+                    "skillSlot": 1,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 4
+                },
+                {
+                    "timestamp": 931750,
+                    "type": "WARD_PLACED",
+                    "creatorId": 8,
+                    "wardType": "CONTROL_WARD"
+                },
+                {
+                    "itemId": 2055,
+                    "timestamp": 931750,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "timestamp": 932410,
+                    "skillSlot": 4,
+                    "levelUpType": "NORMAL",
+                    "type": "SKILL_LEVEL_UP",
+                    "participantId": 7
+                },
+                {
+                    "itemId": 3363,
+                    "timestamp": 940045,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 3520,
+                    "timestamp": 940681,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 8
+                },
+                {
+                    "itemId": 3003,
+                    "timestamp": 945442,
+                    "type": "ITEM_PURCHASED",
+                    "participantId": 2
+                },
+                {
+                    "itemId": 3070,
+                    "timestamp": 945442,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 2
+                },
+                {
+                    "itemId": 3802,
+                    "timestamp": 945442,
+                    "type": "ITEM_DESTROYED",
+                    "participantId": 2
+                }
+            ]
+        }
+    ],
+    "frameInterval": 60000
+}

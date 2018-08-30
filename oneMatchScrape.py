@@ -22,7 +22,7 @@ setNewMatchIds=set(listNewMatchIds)
 	# 	for playerCount in range(10):
 matchList=watcher.match.timeline_by_match(my_region,2848135168)
 
-print("Participant " + str(matchList['frames']))
+print("Participant " + str(matchList['frames'][0]['participantFrames']['1']))
 				#+ "has gold of "+matchList['frames'][playerCount]['totalGold']+" at min " +counter)
 
 

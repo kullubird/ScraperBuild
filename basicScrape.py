@@ -8,6 +8,12 @@ apiKeyInstance = ApiKey()
 watcher = RiotWatcher(apiKeyInstance.key)
 my_region = 'na1'
 
+
+FolderPath = 'North America'
+newMatchFilePath=FolderPath	+'\\newMatchIdsNa1.txt'
+doneMatchFilePath= # do this 
+newUserFilePath=
+doneUserFilePath=
 #initilisting lists
 listNewMatchIds=open('newMatchIdsNa1.txt').read().splitlines()
 listDoneMatchIds=open('doneMatchIdsNa1.txt').read().splitlines()

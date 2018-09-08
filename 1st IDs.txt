@@ -1,0 +1,12 @@
+League of graphs as on 5/9/2018 in soloqueue
+
+Na1 - TF Blade
+
+{
+    "profileIconId": 2075,
+    "name": "TF Blade",
+    "summonerLevel": 89,
+    "accountId": 202988570,
+    "id": 40036262,
+    "revisionDate": 1536089797000
+}

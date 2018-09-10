@@ -10,17 +10,17 @@ from requests import HTTPError
 apiKeyInstance = ApiKey()
 #API key setter and region
 watcher = RiotWatcher(apiKeyInstance.key)
-my_region = 'na1'
+my_region = 'euw1'
 
 # 1514745000000 is jan 1st 2018
 beignTime=151474500000
 
 
 #initilisting lists
-listNewMatchIds=open('newMatchIdsNa1.txt').read().splitlines()
-listDoneMatchIds=open('doneMatchIdsNa1.txt').read().splitlines()
-listNewUserIds=open('newUserIdsNa1.txt').read().splitlines()
-listDoneUserIds=open('doneUserIdsNa1.txt').read().splitlines()
+listNewMatchIds=open('newMatchIdsEuw1.txt').read().splitlines()
+listDoneMatchIds=open('doneMatchIdsEuw1.txt').read().splitlines()
+listNewUserIds=open('newUserIdsEuw1.txt').read().splitlines()
+listDoneUserIds=open('doneUserIdsEuw1.txt').read().splitlines()
 
 #converting lists into sets so no all unique values
 setNewMatchIds=set(listNewMatchIds)
@@ -63,7 +63,7 @@ try:
 			try:
 				matchList=watcher.match.matchlist_by_account(my_region,currentAccountId,queue=420,begin_time=beignTime,season=11)
 			except HTTPError as err:
-				print("Outer Loop~Error Code: "+err.response.status_code)
+				print("~~~~~~~~~~~~~~~~Outer Loop~Error Code: "+str(err.response.status_code))
 				continue
 
 
@@ -72,7 +72,7 @@ try:
 				tempMatchId=m['gameId']
 
 			#check match id to see if done
-				if tempMatchId not in listDoneMatchIds:	
+				if tempMatchId not in listNewMatchIds:	
 
 					i=i+1
 				#will add the tracing for ids of each match here
@@ -83,7 +83,7 @@ try:
 					try:
 						matchDetails=watcher.match.by_id(my_region,tempMatchId)
 					except HTTPError as err:
-						print("Inner Loop~Error Code: "+err.response.status_code)
+						print("~~~~~~~~~~~~~~Inner Loop~Error Code: "+str(err.response.status_code))
 						continue
 
 				#for each match we try to get id of all new players
@@ -98,6 +98,14 @@ try:
 
 			print("\n\nReached end of iteration")
 
+			tempLen=len(set(listNewMatchIds))
+			print(str(tempLen)+" ids traversed")
+
+			if(tempLen>=20000):
+				print("~~~~~~~~~~~~congratsssssss~~~~~~~~")
+				break
+
+
 
 
 
@@ -111,25 +119,25 @@ except KeyboardInterrupt:
 	setNewUserIds=set(listNewUserIds)
 	setDoneUserIds=set(listDoneUserIds)
 	#refill the files when program is halted
-	filePointer=open("newUserIdsNa1.txt","w")
+	filePointer=open("newUserIdsEuw1.txt","w")
 	for lines in setNewUserIds:
 		temp=str(lines)
 		filePointer.write("%s\n"%temp)
 	filePointer.close()
 
-	filePointer=open("doneUserIdsNa1.txt","w")
+	filePointer=open("doneUserIdsEuw1.txt","w")
 	for lines in setDoneUserIds:
 		temp=str(lines)
 		filePointer.write("%s\n"%temp)
 	filePointer.close()
 
-	filePointer=open("newMatchIdsNa1.txt","w")
+	filePointer=open("newMatchIdsEuw1.txt","w")
 	for lines in setNewMatchIds:
 		temp=str(lines)
 		filePointer.write("%s\n"%temp)
 	filePointer.close()
 
-	filePointer=open("doneMatchIdsNa1.txt","w")
+	filePointer=open("doneMatchIdsEuw1.txt","w")
 	for lines in setDoneMatchIds:
 		temp=str(lines)
 		filePointer.write("%s\n"%temp)
@@ -146,25 +154,25 @@ except KeyboardInterrupt:
 	setNewUserIds=set(listNewUserIds)
 	setDoneUserIds=set(listDoneUserIds)
 	#refill the files when program is halted
-	filePointer=open("newUserIdsNa1.txt","w")
+	filePointer=open("newUserIdsEuw1.txt","w")
 	for lines in setNewUserIds:
 		temp=str(lines)
 		filePointer.write("%s\n"%temp)
 	filePointer.close()
 
-	filePointer=open("doneUserIdsNa1.txt","w")
+	filePointer=open("doneUserIdsEuw1.txt","w")
 	for lines in setDoneUserIds:
 		temp=str(lines)
 		filePointer.write("%s\n"%temp)
 	filePointer.close()
 
-	filePointer=open("newMatchIdsNa1.txt","w")
+	filePointer=open("newMatchIdsEuw1.txt","w")
 	for lines in setNewMatchIds:
 		temp=str(lines)
 		filePointer.write("%s\n"%temp)
 	filePointer.close()
 
-	filePointer=open("doneMatchIdsNa1.txt","w")
+	filePointer=open("doneMatchIdsEuw1.txt","w")
 	for lines in setDoneMatchIds:
 		temp=str(lines)
 		filePointer.write("%s\n"%temp)

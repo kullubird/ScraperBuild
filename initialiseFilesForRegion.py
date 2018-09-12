@@ -7,10 +7,13 @@ from ApiKey import ApiKey
 #handling for errors
 from requests import HTTPError
 
+from pathlib import Path
+
+
 apiKeyInstance = ApiKey()
 #API key setter and region
 watcher = RiotWatcher(apiKeyInstance.key)
-my_region = 'na1'
+region = 'na1'
 
 
 #read all chamions as dictionary for refference
@@ -19,6 +22,7 @@ reader = csv.reader(open('Scraped Data/Champions.csv', 'r'))
 d={}
 for  k,v in reader:
 	d[k] = v
+
 
 
 tempMatchId=2860069405
@@ -30,24 +34,55 @@ tempMatchId=2860069405
 # listDoneMatchIds=open('doneMatchIdsNa1.txt').read().splitlines()
 
 
+#check if file exists
+
+
+matchDataFilePath=Path("MatchData.csv")
+if matchDataFilePath.is_file():
+	fileFlag=1
+else:
+	fileFlag=0
+
+
+#open Match data file
+
+matchDataFile=open("MatchData.csv",'a')
+
+with matchDataFile:
+	fnames = ['matchId','seasonId','gameDuration','win','team','firstBlood','firstTower','firstInhibitor','firstDragon','firstRiftHerald','firstBaron','playerKills','towerKills','inhibitorKills','dragonKills','riftHeraldKills','baronKills','ban1','ban2','ban3','ban4','ban5','pick1','pick2','pick3','pick4','pick5']
+	writerMain = csv.DictWriter(matchDataFile, fieldnames=fnames,lineterminator = '\n')    
+
+	if fileFlag==0:
+		writerMain.writeheader()
+
+
+# tempFileName="Scraped Data/"+str(region)+"/"+str(tempMatchId)+".csv"
+# #print(tempFileName)
+# matchTimelineFile = open(tempFileName,'a')
+
+# fnames = ['playerInfo','min1','min2','min3','min4','min5']
+# writer = csv.DictWriter(matchTimelineFile, fieldnames=fnames,lineterminator = '\n')    
+# writer.writeheader()
+# #writer.writeheader()
+# writer.writerow({'playerInfo':'1 gold','min1':'500','min2':'500','min3':'500','min4':'500'})
+
+    
+
+
 
 #converting lists into sets so no all unique values
 # setNewMatchIds=set(listNewMatchIds)
 # setDoneMatchIds=set(listDoneMatchIds)
 
-# f = open('matchData.csv', 'a')
-# with f:
-
-# fnames = ['matchId','seasonId','gameDuration','win','team','firstBlood','firstTower','firstInhibitor','firstDragon','firstRiftHerald','firstBaron','playerKills','towerKills','inhibitorKills','dragonKills','riftHeraldKills','baronKills','ban1','ban2','ban3','ban4','ban5','pick1','pick2','pick3','pick4','pick5']
-# writer = csv.DictWriter(f, fieldnames=fnames,lineterminator = '\n')    
 
 
 # for tempMatchId in setNewMatchIds
 
 
 try:
-	matchDetails=watcher.match.by_id(my_region,tempMatchId)
-	matchTimeline=watcher.match.timeline_by_match(my_region,tempMatchId)
+	matchDetails=watcher.match.by_id(region,tempMatchId)
+	matchTimeline=watcher.match.timeline_by_match(region,tempMatchId)
+
 
 	matchId=tempMatchId
 	seasonId=matchDetails['seasonId']
@@ -56,6 +91,17 @@ try:
 
 	#initializing list to count kills
 	playerKills=[0,0]
+
+	#counting kills of both teams and storing it to player kills
+	for frames in matchTimeline['frames']:
+		for events in frames['events']:
+			if events['type'] == "CHAMPION_KILL":
+				#ensure which team scored the kill and count it
+				if events['killerId']>=0 and events['killerId']<=4:
+					playerKills[0]+=1
+				elif events['killerId']>=5 and events['killerId']<=9:
+					playerKills[1]+=1
+
 
 
 	for teamNo in range(2):
@@ -155,15 +201,13 @@ try:
 		pick4=d[str(pick4)]
 		pick5=d[str(pick5)]	
 
+		matchDataFile=open("MatchData.csv",'a')
+		with matchDataFile:
+			fnames = ['matchId','seasonId','gameDuration','win','team','firstBlood','firstTower','firstInhibitor','firstDragon','firstRiftHerald','firstBaron','playerKills','towerKills','inhibitorKills','dragonKills','riftHeraldKills','baronKills','ban1','ban2','ban3','ban4','ban5','pick1','pick2','pick3','pick4','pick5']
+			writerMain = csv.DictWriter(matchDataFile, fieldnames=fnames,lineterminator = '\n')    
 
-	for frames in matchTimeline['frames']:
-		for events in frames['events']:
-			if events['type'] == "CHAMPION_KILL":
-				#ensure which team scored the kill and count it
-				if events['killerId']>=0 and events['killerId']<=4:
-					playerKills[0]+=1
-				elif events['killerId']>=5 and events['killerId']<=9:
-					playerKills[1]+=1
+				
+			writerMain.writerow({'matchId':tempMatchId,'seasonId':seasonId,'gameDuration':gameDuration,'win':win,'team':team,'firstBlood':firstBlood,'firstTower':firstTower,'firstInhibitor':firstInhibitor,'firstDragon':firstDragon,'firstRiftHerald':firstRiftHerald,'firstBaron':firstBaron,'playerKills':playerKills[teamNo],'towerKills':towerKills,'inhibitorKills':inhibitorKills,'dragonKills':dragonKills,'riftHeraldKills':riftHeraldKills,'baronKills':baronKills,'ban1':ban1,'ban2':ban2,'ban3':ban3,'ban4':ban4,'ban5':ban5,'pick1':pick1,'pick2':pick2,'pick3':pick3,'pick4':pick4,'pick5':pick5})
 
 # print(pick1+pick2+pick3+pick4+pick5+ban1+ban2+ban3+ban4+ban5)
 #print("matchId"+str(matchId)+"seasonId"+str(seasonId)+"gameDuration"+str(gameDuration)+"firstBlood"+str(firstBlood)+"firstTower"+str(firstTower)+"firstInhibitor"+str(firstInhibitor)+"firstDragon"+str(firstDragon)+"firstRiftHerald"+str(firstRiftHerald)+"firstBaron"+str(firstBaron)+str(towerKills)+str(inhibitorKills)+str(dragonKills)+str(riftHeraldKills)+str(baronKills))

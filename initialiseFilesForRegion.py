@@ -26,8 +26,6 @@ for  k,v in reader:
 
 
 tempMatchId=2860069405
-    # fnames = ['playerInfo','1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70']
-    # writer = csv.DictWriter(f, fieldnames=fnames,lineterminator = '\n')    
 
 
 # listNewMatchIds=open('newMatchIdsNa1.txt').read().splitlines()
@@ -37,7 +35,7 @@ tempMatchId=2860069405
 #check if file exists
 
 
-matchDataFilePath=Path("MatchData.csv")
+matchDataFilePath=Path("Scraped Data/"+str(region)+"/MatchData.csv")
 if matchDataFilePath.is_file():
 	fileFlag=1
 else:
@@ -46,25 +44,16 @@ else:
 
 #open Match data file
 
-matchDataFile=open("MatchData.csv",'a')
-
-with matchDataFile:
-	fnames = ['matchId','seasonId','gameDuration','win','team','firstBlood','firstTower','firstInhibitor','firstDragon','firstRiftHerald','firstBaron','playerKills','towerKills','inhibitorKills','dragonKills','riftHeraldKills','baronKills','ban1','ban2','ban3','ban4','ban5','pick1','pick2','pick3','pick4','pick5']
-	writerMain = csv.DictWriter(matchDataFile, fieldnames=fnames,lineterminator = '\n')    
-
-	if fileFlag==0:
-		writerMain.writeheader()
+matchDataFile=open("Scraped Data/"+str(region)+"/MatchData.csv",'a')
 
 
-# tempFileName="Scraped Data/"+str(region)+"/"+str(tempMatchId)+".csv"
-# #print(tempFileName)
-# matchTimelineFile = open(tempFileName,'a')
+fnames = ['matchId','seasonId','gameDuration','gameCreation','win','team','firstBlood','firstTower','firstInhibitor','firstDragon','firstRiftHerald','firstBaron','playerKills','towerKills','inhibitorKills','dragonKills','riftHeraldKills','baronKills','ban1','ban2','ban3','ban4','ban5','pick1','pick2','pick3','pick4','pick5']
+writerMain = csv.DictWriter(matchDataFile, fieldnames=fnames,lineterminator = '\n')    
 
-# fnames = ['playerInfo','min1','min2','min3','min4','min5']
-# writer = csv.DictWriter(matchTimelineFile, fieldnames=fnames,lineterminator = '\n')    
-# writer.writeheader()
-# #writer.writeheader()
-# writer.writerow({'playerInfo':'1 gold','min1':'500','min2':'500','min3':'500','min4':'500'})
+if fileFlag==0:
+	writerMain.writeheader()
+
+
 
     
 
@@ -87,8 +76,11 @@ try:
 	matchId=tempMatchId
 	seasonId=matchDetails['seasonId']
 	gameDuration=matchDetails['gameDuration']
+	gameCreation=matchDetails['gameCreation']
 
 
+
+#data for matchData file
 	#initializing list to count kills
 	playerKills=[0,0]
 
@@ -201,16 +193,82 @@ try:
 		pick4=d[str(pick4)]
 		pick5=d[str(pick5)]	
 
-		matchDataFile=open("MatchData.csv",'a')
-		with matchDataFile:
-			fnames = ['matchId','seasonId','gameDuration','win','team','firstBlood','firstTower','firstInhibitor','firstDragon','firstRiftHerald','firstBaron','playerKills','towerKills','inhibitorKills','dragonKills','riftHeraldKills','baronKills','ban1','ban2','ban3','ban4','ban5','pick1','pick2','pick3','pick4','pick5']
-			writerMain = csv.DictWriter(matchDataFile, fieldnames=fnames,lineterminator = '\n')    
 
 				
-			writerMain.writerow({'matchId':tempMatchId,'seasonId':seasonId,'gameDuration':gameDuration,'win':win,'team':team,'firstBlood':firstBlood,'firstTower':firstTower,'firstInhibitor':firstInhibitor,'firstDragon':firstDragon,'firstRiftHerald':firstRiftHerald,'firstBaron':firstBaron,'playerKills':playerKills[teamNo],'towerKills':towerKills,'inhibitorKills':inhibitorKills,'dragonKills':dragonKills,'riftHeraldKills':riftHeraldKills,'baronKills':baronKills,'ban1':ban1,'ban2':ban2,'ban3':ban3,'ban4':ban4,'ban5':ban5,'pick1':pick1,'pick2':pick2,'pick3':pick3,'pick4':pick4,'pick5':pick5})
+		#writerMain.writerow({'matchId':tempMatchId,'seasonId':seasonId,'gameDuration':gameDuration,'gameCreation':gameCreation,'win':win,'team':team,'firstBlood':firstBlood,'firstTower':firstTower,'firstInhibitor':firstInhibitor,'firstDragon':firstDragon,'firstRiftHerald':firstRiftHerald,'firstBaron':firstBaron,'playerKills':playerKills[teamNo],'towerKills':towerKills,'inhibitorKills':inhibitorKills,'dragonKills':dragonKills,'riftHeraldKills':riftHeraldKills,'baronKills':baronKills,'ban1':ban1,'ban2':ban2,'ban3':ban3,'ban4':ban4,'ban5':ban5,'pick1':pick1,'pick2':pick2,'pick3':pick3,'pick4':pick4,'pick5':pick5})
 
-# print(pick1+pick2+pick3+pick4+pick5+ban1+ban2+ban3+ban4+ban5)
-#print("matchId"+str(matchId)+"seasonId"+str(seasonId)+"gameDuration"+str(gameDuration)+"firstBlood"+str(firstBlood)+"firstTower"+str(firstTower)+"firstInhibitor"+str(firstInhibitor)+"firstDragon"+str(firstDragon)+"firstRiftHerald"+str(firstRiftHerald)+"firstBaron"+str(firstBaron)+str(towerKills)+str(inhibitorKills)+str(dragonKills)+str(riftHeraldKills)+str(baronKills))
+
+#this data will be used to fill the match timeline file 
+
+# min
+# gold,level,minions
+# team1 gold and team 2 gold
+
+# 
+
+
+#opening file with name as match ID
+	tempFileName="Scraped Data/"+str(region)+"/TimelineData/"+str(tempMatchId)+".csv"
+	#print(tempFileName)
+	matchTimelineFile = open(tempFileName,'a')
+
+	fnames = ['minutes','levelPlayer1','levelPlayer2','levelPlayer3','levelPlayer4','levelPlayer5','levelPlayer6','levelPlayer7','levelPlayer8','levelPlayer9','levelPlayer10','minionScorePlayer1','minionScorePlayer2','minionScorePlayer3','minionScorePlayer4','minionScorePlayer5','minionScorePlayer6','minionScorePlayer7','minionScorePlayer8','minionScorePlayer9','minionScorePlayer10','totalGoldPlayer1','totalGoldPlayer2','totalGoldPlayer3','totalGoldPlayer4','totalGoldPlayer5','totalGoldPlayer6','totalGoldPlayer7','totalGoldPlayer8','totalGoldPlayer9','totalGoldPlayer10','totalGoldTeam1','totalGoldTeam2']
+	writer = csv.DictWriter(matchTimelineFile, fieldnames=fnames,lineterminator = '\n')    
+	writer.writeheader()
+
+	minute=0
+
+	for frames in matchTimeline['frames']:
+
+		minute+=1
+
+		totalGoldPlayer1=frames['participantFrames']['1']['totalGold']
+		levelPlayer1=frames['participantFrames']['1']['level']
+		minionScorePlayer1=frames['participantFrames']['1']['minionsKilled']
+
+		totalGoldPlayer2=frames['participantFrames']['2']['totalGold']
+		levelPlayer2=frames['participantFrames']['2']['level']
+		minionScorePlayer2=frames['participantFrames']['2']['minionsKilled']
+
+		totalGoldPlayer3=frames['participantFrames']['3']['totalGold']
+		levelPlayer3=frames['participantFrames']['3']['level']
+		minionScorePlayer3=frames['participantFrames']['3']['minionsKilled']
+
+		totalGoldPlayer4=frames['participantFrames']['4']['totalGold']
+		levelPlayer4=frames['participantFrames']['4']['level']
+		minionScorePlayer4=frames['participantFrames']['4']['minionsKilled']
+
+		totalGoldPlayer5=frames['participantFrames']['5']['totalGold']
+		levelPlayer5=frames['participantFrames']['5']['level']
+		minionScorePlayer5=frames['participantFrames']['5']['minionsKilled']
+
+		totalGoldPlayer6=frames['participantFrames']['6']['totalGold']
+		levelPlayer6=frames['participantFrames']['6']['level']
+		minionScorePlayer6=frames['participantFrames']['6']['minionsKilled']
+
+		totalGoldPlayer7=frames['participantFrames']['7']['totalGold']
+		levelPlayer7=frames['participantFrames']['7']['level']
+		minionScorePlayer7=frames['participantFrames']['7']['minionsKilled']
+
+		totalGoldPlayer8=frames['participantFrames']['8']['totalGold']
+		levelPlayer8=frames['participantFrames']['8']['level']
+		minionScorePlayer8=frames['participantFrames']['8']['minionsKilled']
+
+		totalGoldPlayer9=frames['participantFrames']['9']['totalGold']
+		levelPlayer9=frames['participantFrames']['9']['level']
+		minionScorePlayer9=frames['participantFrames']['9']['minionsKilled']
+
+		totalGoldPlayer10=frames['participantFrames']['10']['totalGold']
+		levelPlayer10=frames['participantFrames']['10']['level']
+		minionScorePlayer10=frames['participantFrames']['10']['minionsKilled']
+
+
+
+#calculating the team gold per minute
+		totalGoldTeam1=totalGoldPlayer1+totalGoldPlayer2+totalGoldPlayer3+totalGoldPlayer4+totalGoldPlayer5	
+		totalGoldTeam2=totalGoldPlayer6+totalGoldPlayer7+totalGoldPlayer8+totalGoldPlayer9+totalGoldPlayer10
+
+		writer.writerow({'minutes':minute,'levelPlayer1':levelPlayer1,'levelPlayer2':levelPlayer2,'levelPlayer3':levelPlayer3,'levelPlayer4':levelPlayer4,'levelPlayer5':levelPlayer5,'levelPlayer6':levelPlayer6,'levelPlayer7':levelPlayer7,'levelPlayer8':levelPlayer8,'levelPlayer9':levelPlayer9,'levelPlayer10':levelPlayer10,'minionScorePlayer1':minionScorePlayer1,'minionScorePlayer2':minionScorePlayer2,'minionScorePlayer3':minionScorePlayer3,'minionScorePlayer4':minionScorePlayer4,'minionScorePlayer5':minionScorePlayer5,'minionScorePlayer6':minionScorePlayer6,'minionScorePlayer7':minionScorePlayer7,'minionScorePlayer8':minionScorePlayer8,'minionScorePlayer9':minionScorePlayer9,'minionScorePlayer10':minionScorePlayer10,'totalGoldPlayer1':totalGoldPlayer1,'totalGoldPlayer2':totalGoldPlayer2,'totalGoldPlayer3':totalGoldPlayer3,'totalGoldPlayer4':totalGoldPlayer4,'totalGoldPlayer5':totalGoldPlayer5,'totalGoldPlayer6':totalGoldPlayer6,'totalGoldPlayer7':totalGoldPlayer7,'totalGoldPlayer8':totalGoldPlayer8,'totalGoldPlayer9':totalGoldPlayer9,'totalGoldPlayer10':totalGoldPlayer10,'totalGoldTeam1':totalGoldTeam1,'totalGoldTeam2':totalGoldTeam2})
 
 	
 

@@ -242,7 +242,7 @@ for tempMatchId	in listNewMatchIds:
 		#print(tempFileName)
 		matchTimelineFile = open(tempFileName,'a')
 
-		fnames = ['minutes','levelPlayer1','levelPlayer2','levelPlayer3','levelPlayer4','levelPlayer5','levelPlayer6','levelPlayer7','levelPlayer8','levelPlayer9','levelPlayer10','minionScorePlayer1','minionScorePlayer2','minionScorePlayer3','minionScorePlayer4','minionScorePlayer5','minionScorePlayer6','minionScorePlayer7','minionScorePlayer8','minionScorePlayer9','minionScorePlayer10','totalGoldPlayer1','totalGoldPlayer2','totalGoldPlayer3','totalGoldPlayer4','totalGoldPlayer5','totalGoldPlayer6','totalGoldPlayer7','totalGoldPlayer8','totalGoldPlayer9','totalGoldPlayer10','totalGoldTeam1','totalGoldTeam2']
+		fnames = ['minutes','levelPlayer1','levelPlayer2','levelPlayer3','levelPlayer4','levelPlayer5','levelPlayer6','levelPlayer7','levelPlayer8','levelPlayer9','levelPlayer10','minionScorePlayer1','minionScorePlayer2','minionScorePlayer3','minionScorePlayer4','minionScorePlayer5','minionScorePlayer6','minionScorePlayer7','minionScorePlayer8','minionScorePlayer9','minionScorePlayer10','jungleMinionScorePlayer1','jungleMinionScorePlayer2','jungleMinionScorePlayer3','jungleMinionScorePlayer4','jungleMinionScorePlayer5','jungleMinionScorePlayer6','jungleMinionScorePlayer7','jungleMinionScorePlayer8','jungleMinionScorePlayer9','jungleMinionScorePlayer10','totalGoldPlayer1','totalGoldPlayer2','totalGoldPlayer3','totalGoldPlayer4','totalGoldPlayer5','totalGoldPlayer6','totalGoldPlayer7','totalGoldPlayer8','totalGoldPlayer9','totalGoldPlayer10','totalGoldTeam1','totalGoldTeam2']
 		writer = csv.DictWriter(matchTimelineFile, fieldnames=fnames,lineterminator = '\n')    
 		writer.writeheader()
 
@@ -252,45 +252,58 @@ for tempMatchId	in listNewMatchIds:
 
 			minute+=1
 
+
 			totalGoldPlayer1=frames['participantFrames']['1']['totalGold']
 			levelPlayer1=frames['participantFrames']['1']['level']
 			minionScorePlayer1=frames['participantFrames']['1']['minionsKilled']
+			jungleMinionScorePlayer1=frames['participantFrames']['1']['jungleMinionsKilled']
+
 
 			totalGoldPlayer2=frames['participantFrames']['2']['totalGold']
 			levelPlayer2=frames['participantFrames']['2']['level']
 			minionScorePlayer2=frames['participantFrames']['2']['minionsKilled']
+			jungleMinionScorePlayer2=frames['participantFrames']['2']['jungleMinionsKilled']
 
 			totalGoldPlayer3=frames['participantFrames']['3']['totalGold']
 			levelPlayer3=frames['participantFrames']['3']['level']
 			minionScorePlayer3=frames['participantFrames']['3']['minionsKilled']
+			jungleMinionScorePlayer3=frames['participantFrames']['3']['jungleMinionsKilled']
 
 			totalGoldPlayer4=frames['participantFrames']['4']['totalGold']
 			levelPlayer4=frames['participantFrames']['4']['level']
 			minionScorePlayer4=frames['participantFrames']['4']['minionsKilled']
+			jungleMinionScorePlayer4=frames['participantFrames']['4']['jungleMinionsKilled']
+
 
 			totalGoldPlayer5=frames['participantFrames']['5']['totalGold']
 			levelPlayer5=frames['participantFrames']['5']['level']
 			minionScorePlayer5=frames['participantFrames']['5']['minionsKilled']
+			jungleMinionScorePlayer5=frames['participantFrames']['5']['jungleMinionsKilled']
 
 			totalGoldPlayer6=frames['participantFrames']['6']['totalGold']
 			levelPlayer6=frames['participantFrames']['6']['level']
 			minionScorePlayer6=frames['participantFrames']['6']['minionsKilled']
+			jungleMinionScorePlayer6=frames['participantFrames']['6']['jungleMinionsKilled']
 
 			totalGoldPlayer7=frames['participantFrames']['7']['totalGold']
 			levelPlayer7=frames['participantFrames']['7']['level']
 			minionScorePlayer7=frames['participantFrames']['7']['minionsKilled']
+			jungleMinionScorePlayer7=frames['participantFrames']['7']['jungleMinionsKilled']
 
 			totalGoldPlayer8=frames['participantFrames']['8']['totalGold']
 			levelPlayer8=frames['participantFrames']['8']['level']
 			minionScorePlayer8=frames['participantFrames']['8']['minionsKilled']
+			jungleMinionScorePlayer8=frames['participantFrames']['8']['jungleMinionsKilled']
 
 			totalGoldPlayer9=frames['participantFrames']['9']['totalGold']
 			levelPlayer9=frames['participantFrames']['9']['level']
 			minionScorePlayer9=frames['participantFrames']['9']['minionsKilled']
+			jungleMinionScorePlayer9=frames['participantFrames']['9']['jungleMinionsKilled']
 
 			totalGoldPlayer10=frames['participantFrames']['10']['totalGold']
 			levelPlayer10=frames['participantFrames']['10']['level']
 			minionScorePlayer10=frames['participantFrames']['10']['minionsKilled']
+			jungleMinionScorePlayer10=frames['participantFrames']['10']['jungleMinionsKilled']
 
 
 
@@ -298,7 +311,7 @@ for tempMatchId	in listNewMatchIds:
 			totalGoldTeam1=totalGoldPlayer1+totalGoldPlayer2+totalGoldPlayer3+totalGoldPlayer4+totalGoldPlayer5	
 			totalGoldTeam2=totalGoldPlayer6+totalGoldPlayer7+totalGoldPlayer8+totalGoldPlayer9+totalGoldPlayer10
 
-			writer.writerow({'minutes':minute,'levelPlayer1':levelPlayer1,'levelPlayer2':levelPlayer2,'levelPlayer3':levelPlayer3,'levelPlayer4':levelPlayer4,'levelPlayer5':levelPlayer5,'levelPlayer6':levelPlayer6,'levelPlayer7':levelPlayer7,'levelPlayer8':levelPlayer8,'levelPlayer9':levelPlayer9,'levelPlayer10':levelPlayer10,'minionScorePlayer1':minionScorePlayer1,'minionScorePlayer2':minionScorePlayer2,'minionScorePlayer3':minionScorePlayer3,'minionScorePlayer4':minionScorePlayer4,'minionScorePlayer5':minionScorePlayer5,'minionScorePlayer6':minionScorePlayer6,'minionScorePlayer7':minionScorePlayer7,'minionScorePlayer8':minionScorePlayer8,'minionScorePlayer9':minionScorePlayer9,'minionScorePlayer10':minionScorePlayer10,'totalGoldPlayer1':totalGoldPlayer1,'totalGoldPlayer2':totalGoldPlayer2,'totalGoldPlayer3':totalGoldPlayer3,'totalGoldPlayer4':totalGoldPlayer4,'totalGoldPlayer5':totalGoldPlayer5,'totalGoldPlayer6':totalGoldPlayer6,'totalGoldPlayer7':totalGoldPlayer7,'totalGoldPlayer8':totalGoldPlayer8,'totalGoldPlayer9':totalGoldPlayer9,'totalGoldPlayer10':totalGoldPlayer10,'totalGoldTeam1':totalGoldTeam1,'totalGoldTeam2':totalGoldTeam2})
+			writer.writerow({'minutes':minute,'levelPlayer1':levelPlayer1,'levelPlayer2':levelPlayer2,'levelPlayer3':levelPlayer3,'levelPlayer4':levelPlayer4,'levelPlayer5':levelPlayer5,'levelPlayer6':levelPlayer6,'levelPlayer7':levelPlayer7,'levelPlayer8':levelPlayer8,'levelPlayer9':levelPlayer9,'levelPlayer10':levelPlayer10,'minionScorePlayer1':minionScorePlayer1,'minionScorePlayer2':minionScorePlayer2,'minionScorePlayer3':minionScorePlayer3,'minionScorePlayer4':minionScorePlayer4,'minionScorePlayer5':minionScorePlayer5,'minionScorePlayer6':minionScorePlayer6,'minionScorePlayer7':minionScorePlayer7,'minionScorePlayer8':minionScorePlayer8,'minionScorePlayer9':minionScorePlayer9,'minionScorePlayer10':minionScorePlayer10,'jungleMinionScorePlayer1':jungleMinionScorePlayer1,'jungleMinionScorePlayer2':jungleMinionScorePlayer2,'jungleMinionScorePlayer3':jungleMinionScorePlayer3,'jungleMinionScorePlayer4':jungleMinionScorePlayer4,'jungleMinionScorePlayer5':jungleMinionScorePlayer5,'jungleMinionScorePlayer6':jungleMinionScorePlayer6,'jungleMinionScorePlayer7':jungleMinionScorePlayer7,'jungleMinionScorePlayer8':jungleMinionScorePlayer8,'jungleMinionScorePlayer9':jungleMinionScorePlayer9,'jungleMinionScorePlayer10':jungleMinionScorePlayer10,'totalGoldPlayer1':totalGoldPlayer1,'totalGoldPlayer2':totalGoldPlayer2,'totalGoldPlayer3':totalGoldPlayer3,'totalGoldPlayer4':totalGoldPlayer4,'totalGoldPlayer5':totalGoldPlayer5,'totalGoldPlayer6':totalGoldPlayer6,'totalGoldPlayer7':totalGoldPlayer7,'totalGoldPlayer8':totalGoldPlayer8,'totalGoldPlayer9':totalGoldPlayer9,'totalGoldPlayer10':totalGoldPlayer10,'totalGoldTeam1':totalGoldTeam1,'totalGoldTeam2':totalGoldTeam2})
 
 		
 

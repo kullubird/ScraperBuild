@@ -1,6 +1,6 @@
-League of graphs as on 5/9/2018 in soloqueue
+League of graphs as on 9/9/2018 in soloqueue
 
-Na1 - TF Blade
+NA1 - TF Blade
 
 {
     "profileIconId": 2075,
@@ -9,4 +9,92 @@ Na1 - TF Blade
     "accountId": 202988570,
     "id": 40036262,
     "revisionDate": 1536089797000
+}
+
+EUN1 - Erring
+
+{
+    "profileIconId": 576,
+    "name": "Erring",
+    "summonerLevel": 131,
+    "accountId": 29647586,
+    "id": 25251096,
+    "revisionDate": 1536504804000
+}
+
+KR - 바위게 내꺼야 (It's mine to rock.)
+
+{
+    "profileIconId": 932,
+    "name": "바위게 내꺼야",
+    "summonerLevel": 46,
+    "accountId": 210588930,
+    "id": 70960224,
+    "revisionDate": 1536477457000
+}
+
+LAN - LA1 - Jauny
+
+{
+    "profileIconId": 3592,
+    "name": "Jauny",
+    "summonerLevel": 114,
+    "accountId": 200802569,
+    "id": 1740857,
+    "revisionDate": 1535174967000
+} 
+
+LAS - LA2 - Aloned
+
+{
+    "profileIconId": 3078,
+    "name": "Aloned",
+    "summonerLevel": 96,
+    "accountId": 59501,
+    "id": 54601,
+    "revisionDate": 1536410822000
+}
+
+BR - BR1 - Cisne De Gelo
+
+{
+    "profileIconId": 3556,
+    "name": "Cisne De Gelo",
+    "summonerLevel": 47,
+    "accountId": 1951976926456128,
+    "id": 34020129,
+    "revisionDate": 1536324513000
+}
+
+RU - Chall in S6 XD
+
+{
+    "profileIconId": 27,
+    "name": "Chall in S6 XD",
+    "summonerLevel": 74,
+    "accountId": 203223599,
+    "id": 9370146,
+    "revisionDate": 1536500249000
+}
+
+TR - TR1 -  RB Closer
+
+{
+    "profileIconId": 7,
+    "name": "RB Closer",
+    "summonerLevel": 91,
+    "accountId": 207729635,
+    "id": 12942655,
+    "revisionDate": 1536495554000
+}
+
+OCE OC1 - tlxjkgcpl17717
+
+{
+    "profileIconId": 3315,
+    "name": "tlxjkgcpl17717",
+    "summonerLevel": 84,
+    "accountId": 200404986,
+    "id": 735088,
+    "revisionDate": 1536509390000
 }

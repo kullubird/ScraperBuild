@@ -3,10 +3,14 @@ from riotwatcher import RiotWatcher
 #custom class to store Api Key
 from ApiKey import ApiKey
 
+#handling for errors
+from requests import HTTPError
+
+
 apiKeyInstance = ApiKey()
 #API key setter and region
 watcher = RiotWatcher(apiKeyInstance.key)
-my_region = apiKeyInstance.region
+my_region = 'na1'
 
 #reading data into csvFile
 listNewMatchIds=open('newMatchIdsNa1.txt').read().splitlines()
@@ -22,5 +26,6 @@ setDoneMatchIds=set(listDoneMatchIds)
 matchDetails=watcher.match.by_id(my_region,2852863489)
 				
 #for each match we try to get banned players
-
-print(matchDetails['teams'][0]['bans'][0]['championId'])
+for i in range(2):
+	for j in range(5):
+		print(matchDetails['teams'][0]['bans'][0]['championId'])

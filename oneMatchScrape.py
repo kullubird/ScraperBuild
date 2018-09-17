@@ -14,20 +14,16 @@ my_region = 'na1'
 
 setNewMatchIds=set(listNewMatchIds)
 
-# for i in setNewMatchIds:
-# 	matchList=watcher.match.timeline_by_match(my_region,i)
-# 	counter=0
+for matchId in setNewMatchIds:
+ 	matchData=watcher.match.timeline_by_match(my_region,matchId)
 
-	# for m in matchList['frames']:
-	# 	counter+=1
+	for frames in matchList['frames']:
 
-	# 	for playerCount in range(10):
-matchList=watcher.match.timeline_by_match(my_region,2848135168)
+	 	for participantFrames in range(10):
 
-print("Participant " + str(matchList['frames'][0]['participantFrames']['1']))
+			#print("Participant " + str(matchList['frames'][0]['participantFrames']['1']))
+			tempTotalGold
 
-np.savetxt('data.csv', (col1_array, col2_array, col3_array), delimiter=',')
-				#+ "has gold of "+matchList['frames'][playerCount]['totalGold']+" at min " +counter)
-
-
-
+#need an array to store 
+	goldArray1[]
+	goldArray2[]

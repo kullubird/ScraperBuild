@@ -10,18 +10,18 @@ from requests import HTTPError
 apiKeyInstance = ApiKey()
 #API key setter and region
 watcher = RiotWatcher(apiKeyInstance.key)
-my_region = 'euw1'
-capsRegion = 'Euw1'
+my_region = 'ru'
+capsRegion= 'Ru'
 
 # 1514745000000 is jan 1st 2018
 beignTime=151474500000
 
 
 #initilisting lists
-listNewMatchIds=open('Scraped Data/'+my_region+'/newMatchIds'+capsRegion+'.txt').read().splitlines()
-listDoneMatchIds=open('Scraped Data/'+my_region+'/doneMatchIds'+capsRegion+'.txt').read().splitlines()
-listNewUserIds=open('Scraped Data/'+my_region+'/newUserIds'+capsRegion+'.txt').read().splitlines()
-listDoneUserIds=open('Scraped Data/'+my_region+'/doneUserIds'+capsRegion+'.txt').read().splitlines()
+listNewMatchIds=open('Scraped Data/'+str(my_region)+'/newMatchIds'+str(capsRegion)+'.txt').read().splitlines()
+listDoneMatchIds=open('Scraped Data/'+str(my_region)+'/doneMatchIds'+str(capsRegion)+'.txt').read().splitlines()
+listNewUserIds=open('Scraped Data/'+str(my_region)+'/newUserIds'+str(capsRegion)+'.txt').read().splitlines()
+listDoneUserIds=open('Scraped Data/'+str(my_region)+'/doneUserIds'+str(capsRegion)+'.txt').read().splitlines()
 
 #converting lists into sets so no all unique values
 setNewMatchIds=set(listNewMatchIds)
@@ -60,41 +60,42 @@ try:
 			# getting all match ids from history of a current account of a paticular id
 
 
-				try:
-					matchList=watcher.match.matchlist_by_account(my_region,currentAccountId,queue=420,begin_time=beignTime,season=11)
-				except HTTPError as err:
-					print("~~~~~~~~~~~~~~~~Outer Loop~Error Code: "+str(err.response.status_code))
-					continue
+			#add api key as its not calling
+			try:
+				matchList=watcher.match.matchlist_by_account(my_region,currentAccountId,queue=420,begin_time=beignTime,season=11)
+			except HTTPError as err:
+				print("~~~~~~~~~~~~~~~~Outer Loop~Error Code: "+str(err.response.status_code))
+				continue
 
 
-				for m in matchList['matches']:
+			for m in matchList['matches']:
 
-					tempMatchId=m['gameId']
+				tempMatchId=m['gameId']
 
-				#check match id to see if done
-					if tempMatchId not in listNewMatchIds:	
+			#check match id to see if done
+				if tempMatchId not in listNewMatchIds:	
 
-						i=i+1
-					#will add the tracing for ids of each match here
-						print(str(i)+"th current match id is " + str(tempMatchId))
+					i=i+1
+				#will add the tracing for ids of each match here
+					print(str(i)+"th current match id is " + str(tempMatchId))
 
 
-					#first we request for json response on match details
-						try:
-							matchDetails=watcher.match.by_id(my_region,tempMatchId)
-						except HTTPError as err:
-							print("~~~~~~~~~~~~~~Inner Loop~Error Code: "+str(err.response.status_code))
-							continue
+				#first we request for json response on match details
+					try:
+						matchDetails=watcher.match.by_id(my_region,tempMatchId)
+					except HTTPError as err:
+						print("~~~~~~~~~~~~~~Inner Loop~Error Code: "+str(err.response.status_code))
+						continue
 
-					#for each match we try to get id of all new players
-						for participants in matchDetails['participantIdentities']:
-							
-							tempMatchPlayerID=str(participants['player']['accountId'])
-							
-							if tempMatchPlayerID not in listDoneMatchIds:
-								listNewUserIds.append(tempMatchPlayerID) 	
+				#for each match we try to get id of all new players
+					for participants in matchDetails['participantIdentities']:
+						
+						tempMatchPlayerID=str(participants['player']['accountId'])
+						
+						if tempMatchPlayerID not in listDoneMatchIds:
+							listNewUserIds.append(tempMatchPlayerID) 	
 
-						listNewMatchIds.append(tempMatchId)
+					listNewMatchIds.append(tempMatchId)
 
 			print("\n\nReached end of iteration")
 
@@ -121,25 +122,25 @@ except KeyboardInterrupt:
 	setNewUserIds=set(listNewUserIds)
 	setDoneUserIds=set(listDoneUserIds)
 		#refill the files when program is halted
-	filePointer=open("Scraped Data/"+my_region+"/newUserIds"+capsRegion+".txt","w")
+	filePointer=open("Scraped Data/"+str(my_region)+"/newUserIds"+str(capsRegion)+".txt","w")
 	for lines in setNewUserIds:
 		temp=str(lines)
 		filePointer.write("%s\n"%temp)
 	filePointer.close()
 
-	filePointer=open("Scraped Data/"+my_region+"/doneUserIds"+capsRegion+".txt","w")
+	filePointer=open("Scraped Data/"+str(my_region)+"/doneUserIds"+str(capsRegion)+".txt","w")
 	for lines in setDoneUserIds:
 		temp=str(lines)
 		filePointer.write("%s\n"%temp)
 	filePointer.close()
 
-	filePointer=open("Scraped Data/"+my_region+"/newMatchIds"+capsRegion+".txt","w")
+	filePointer=open("Scraped Data/"+str(my_region)+"/newMatchIds"+str(capsRegion)+".txt","w")
 	for lines in setNewMatchIds:
 		temp=str(lines)
 		filePointer.write("%s\n"%temp)
 	filePointer.close()
 
-	filePointer=open("Scraped Data/"+my_region+"/doneMatchIds"+capsRegion+".txt","w")
+	filePointer=open("Scraped Data/"+str(my_region)+"/doneMatchIds"+str(capsRegion)+".txt","w")
 	for lines in setDoneMatchIds:
 		temp=str(lines)
 		filePointer.write("%s\n"%temp)
@@ -158,25 +159,25 @@ setDoneMatchIds=set(listDoneMatchIds)
 setNewUserIds=set(listNewUserIds)
 setDoneUserIds=set(listDoneUserIds)
 	#refill the files when program is halted
-filePointer=open("Scraped Data/"+my_region+"/newUserIds"+capsRegion+".txt","w")
+filePointer=open("Scraped Data/"+str(my_region)+"/newUserIds"+str(capsRegion)+".txt","w")
 for lines in setNewUserIds:
 	temp=str(lines)
 	filePointer.write("%s\n"%temp)
 filePointer.close()
 
-filePointer=open("Scraped Data/"+my_region+"/doneUserIds"+capsRegion+".txt","w")
+filePointer=open("Scraped Data/"+str(my_region)+"/doneUserIds"+str(capsRegion)+".txt","w")
 for lines in setDoneUserIds:
 	temp=str(lines)
 	filePointer.write("%s\n"%temp)
 filePointer.close()
 
-filePointer=open("Scraped Data/"+my_region+"/newMatchIds"+capsRegion+".txt","w")
+filePointer=open("Scraped Data/"+str(my_region)+"/newMatchIds"+str(capsRegion)+".txt","w")
 for lines in setNewMatchIds:
 	temp=str(lines)
 	filePointer.write("%s\n"%temp)
 filePointer.close()
 
-filePointer=open("Scraped Data/"+my_region+"/doneMatchIds"+capsRegion+".txt","w")
+filePointer=open("Scraped Data/"+str(my_region)+"/doneMatchIds"+str(capsRegion)+".txt","w")
 for lines in setDoneMatchIds:
 	temp=str(lines)
 	filePointer.write("%s\n"%temp)

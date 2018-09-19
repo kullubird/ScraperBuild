@@ -16,15 +16,25 @@ watcher = RiotWatcher(apiKeyInstance.key)
 myRegion = 'na1'
 capsRegion='Na1'
 
+
 #read all chamions as dictionary for refference
 
 reader = csv.reader(open('Scraped Data/Champions.csv', 'r'))
-d={}
+championsDict={}
 for  k,v in reader:
-	d[k] = v
+	championsDict[k] = v
+#setting -1 for missed bans as blankspace
+championsDict[str(-1)]=" "
+
+
+#read all spells as dictionary for refference
+reader = csv.reader(open('Scraped Data/Summoner Spells.csv', 'r'))
+spellsDict={}
+for  k,v in reader:
+	spellsDict[k] = v
 
 #setting -1 for missed bans as blankspace
-	d[str(-1)]=" "
+spellsDict[str(-1)]=" "
 
 
 
@@ -51,7 +61,7 @@ else:
 matchDataFile=open("Scraped Data/"+str(myRegion)+"/MatchData.csv",'a')
 
 
-fnames = ['matchId','seasonId','gameDuration','gameCreation','win','team','wardsPlaced','firstBlood','firstTower','firstInhibitor','firstDragon','firstRiftHerald','firstBaron','teamKills','towerKills','inhibitorKills','dragonKills','riftHeraldKills','baronKills','ban1','ban2','ban3','ban4','ban5','pick1','pick2','pick3','pick4','pick5','player1Kills','player2Kills','player3Kills','player4Kills','player5Kills']
+fnames = ['matchId','seasonId','gameDuration','gameCreation','win','team','wardsPlaced','firstBlood','firstTower','firstInhibitor','firstDragon','firstRiftHerald','firstBaron','teamKills','towerKills','inhibitorKills','dragonKills','riftHeraldKills','baronKills','ban1','ban2','ban3','ban4','ban5','pick1','pick2','pick3','pick4','pick5','player1Kills','player2Kills','player3Kills','player4Kills','player5Kills','spell1Player1','spell1Player2','spell1Player3','spell1Player4','spell1Player5','spell2Player1','spell2Player2','spell2Player3','spell2Player4','spell2Player5']
 writerMain = csv.DictWriter(matchDataFile, fieldnames=fnames,lineterminator = '\n')    
 
 if fileFlag==0:
@@ -74,13 +84,18 @@ listNewMatchIds=list(setNewMatchIds)
 count = 0
 flag = 1
 
+
+
 # for tempMatchId in setNewMatchIds
 while flag == 1:
 	for tempMatchId	in listNewMatchIds:
-		print(str(tempMatchId))
+
 
 		if flag == 0 :
 			break
+		else:
+			print(str(tempMatchId))
+
 
 
 		if tempMatchId not in listDoneMatchIds:
@@ -92,7 +107,7 @@ while flag == 1:
 				matchId=tempMatchId
 				seasonId=matchDetails['seasonId']
 				gameDuration=matchDetails['gameDuration']
-				gameCreation=matchDetails['gameCreation']
+				gameCreation="<"+str(matchDetails['gameCreation'])
 
 
 
@@ -103,8 +118,13 @@ while flag == 1:
 				playerKills=[0,0,0,0,0,0,0,0,0,0,0]
 				wardsPlaced=[0,0,0,0,0,0,0,0,0,0,0]
 
+				spell1=["","","","",""]
+				spell2=["","","","",""]
+
 				#counting kills of both teams and storing it to player and team kills
 				for frames in matchTimeline['frames']:
+					tempWardPlaced=0
+					tempTimePlaced=0
 					for events in frames['events']:
 						if events['type'] == "CHAMPION_KILL":
 							#ensure which team scored the kill and count it
@@ -120,13 +140,22 @@ while flag == 1:
 							playerKills[int(tempKillerId)]+=1
 
 						if events['type'] == "WARD_PLACED":
-							#ensure which team placed the ward and count it
-							tempWardPlaced=events['creatorId']
+							#ensure that the ward is not a teemo mushroom
+							if events['wardType'] != "TEEMO_MUSHROOM":
 
-							if tempWardPlaced>=0 and tempWardPlaced<=4:
-								teamWardsPlaced[0]+=1
-							elif tempWardPlaced>=5 and tempWardPlaced<=9:
-								teamWardsPlaced[1]+=1
+								if tempWardPlaced != events['creatorId'] and tempTimePlaced != events['timestamp']:
+
+									tempWardPlaced=events['creatorId']
+									tempTimePlaced=events['timestamp']
+
+
+									# teemo shrooms not counted and fix code
+									if tempWardPlaced>=0 and tempWardPlaced<=4:
+										teamWardsPlaced[0]+=1
+
+									elif tempWardPlaced>=5 and tempWardPlaced<=9:
+										teamWardsPlaced[1]+=1
+
 
 
 
@@ -216,36 +245,55 @@ while flag == 1:
 
 					#refferencing dictionary to gete champion names from id
 					#if id = -1 then ban missed
-					ban1=d[str(ban1)]
-					ban2=d[str(ban2)]
-					ban3=d[str(ban3)]
-					ban4=d[str(ban4)]
-					ban5=d[str(ban5)]
+					ban1=championsDict[str(ban1)]
+					ban2=championsDict[str(ban2)]
+					ban3=championsDict[str(ban3)]
+					ban4=championsDict[str(ban4)]
+					ban5=championsDict[str(ban5)]
 
-					pick1=d[str(pick1)]
-					pick2=d[str(pick2)]
-					pick3=d[str(pick3)]
-					pick4=d[str(pick4)]
-					pick5=d[str(pick5)]	
+					pick1=championsDict[str(pick1)]
+					pick2=championsDict[str(pick2)]
+					pick3=championsDict[str(pick3)]
+					pick4=championsDict[str(pick4)]
+					pick5=championsDict[str(pick5)]	
 
 
-					#kill count per iteration require different values
+
 					if teamNo == 0:
+					# total kill count per player 						
 						player1Kills=playerKills[0]
 						player2Kills=playerKills[1]
 						player3Kills=playerKills[2]
 						player4Kills=playerKills[3]
 						player5Kills=playerKills[4]
+
+					# summoner spell 1 pick
+
+						for x in range(0,5):
+							spell1[x]=spellsDict[str(matchDetails['participants'][x]['spell1Id'])] 
+
+					# summoner spell 2 pick
+
+						for x in range(0,5):
+							spell2[x]=spellsDict[str(matchDetails['participants'][x]['spell1Id'])]
+
 					else:
+
 						player1Kills=playerKills[5]
 						player2Kills=playerKills[6]
 						player3Kills=playerKills[7]
 						player4Kills=playerKills[8]
 						player5Kills=playerKills[9]
 
+						for x in range(0,5):
+							spell1[x]=spellsDict[str(matchDetails['participants'][x+5]['spell1Id'])]	
+
+						for x in range(0,5):
+							spell2[x]=spellsDict[str(matchDetails['participants'][x+5]['spell1Id'])]					
+
 
 							
-					writerMain.writerow({'matchId':tempMatchId,'seasonId':seasonId,'gameDuration':gameDuration,'gameCreation':gameCreation,'win':win,'team':team,'wardsPlaced':teamWardsPlaced[teamNo],'firstBlood':firstBlood,'firstTower':firstTower,'firstInhibitor':firstInhibitor,'firstDragon':firstDragon,'firstRiftHerald':firstRiftHerald,'firstBaron':firstBaron,'teamKills':teamKills[teamNo],'towerKills':towerKills,'inhibitorKills':inhibitorKills,'dragonKills':dragonKills,'riftHeraldKills':riftHeraldKills,'baronKills':baronKills,'ban1':ban1,'ban2':ban2,'ban3':ban3,'ban4':ban4,'ban5':ban5,'pick1':pick1,'pick2':pick2,'pick3':pick3,'pick4':pick4,'pick5':pick5,'player1Kills':player1Kills,'player2Kills':player2Kills,'player3Kills':player3Kills,'player4Kills':player4Kills,'player5Kills':player5Kills})
+					writerMain.writerow({'matchId':tempMatchId,'seasonId':seasonId,'gameDuration':gameDuration,'gameCreation':gameCreation,'win':win,'team':team,'wardsPlaced':teamWardsPlaced[teamNo],'firstBlood':firstBlood,'firstTower':firstTower,'firstInhibitor':firstInhibitor,'firstDragon':firstDragon,'firstRiftHerald':firstRiftHerald,'firstBaron':firstBaron,'teamKills':teamKills[teamNo],'towerKills':towerKills,'inhibitorKills':inhibitorKills,'dragonKills':dragonKills,'riftHeraldKills':riftHeraldKills,'baronKills':baronKills,'ban1':ban1,'ban2':ban2,'ban3':ban3,'ban4':ban4,'ban5':ban5,'pick1':pick1,'pick2':pick2,'pick3':pick3,'pick4':pick4,'pick5':pick5,'player1Kills':player1Kills,'player2Kills':player2Kills,'player3Kills':player3Kills,'player4Kills':player4Kills,'player5Kills':player5Kills,'spell1Player1':spell1[0],'spell1Player2':spell1[1],'spell1Player3':spell1[2],'spell1Player4':spell1[3],'spell1Player5':spell1[4],'spell2Player1':spell2[0],'spell2Player2':spell2[1],'spell2Player3':spell2[2],'spell2Player4':spell2[3],'spell2Player5':spell2[4]})
 
 
 			#this data will be used to fill the match timeline file 
@@ -262,7 +310,7 @@ while flag == 1:
 				#print(tempFileName)
 				matchTimelineFile = open(tempFileName,'a')
 
-				fnames = ['minutes','levelPlayer1','levelPlayer2','levelPlayer3','levelPlayer4','levelPlayer5','levelPlayer6','levelPlayer7','levelPlayer8','levelPlayer9','levelPlayer10','minionScorePlayer1','minionScorePlayer2','minionScorePlayer3','minionScorePlayer4','minionScorePlayer5','minionScorePlayer6','minionScorePlayer7','minionScorePlayer8','minionScorePlayer9','minionScorePlayer10','jungleMinionScorePlayer1','jungleMinionScorePlayer2','jungleMinionScorePlayer3','jungleMinionScorePlayer4','jungleMinionScorePlayer5','jungleMinionScorePlayer6','jungleMinionScorePlayer7','jungleMinionScorePlayer8','jungleMinionScorePlayer9','jungleMinionScorePlayer10','totalGoldPlayer1','totalGoldPlayer2','totalGoldPlayer3','totalGoldPlayer4','totalGoldPlayer5','totalGoldPlayer6','totalGoldPlayer7','totalGoldPlayer8','totalGoldPlayer9','totalGoldPlayer10','totalGoldTeam1','totalGoldTeam2']
+				fnames = ['minute','levelPlayer1','levelPlayer2','levelPlayer3','levelPlayer4','levelPlayer5','levelPlayer6','levelPlayer7','levelPlayer8','levelPlayer9','levelPlayer10','minionScorePlayer1','minionScorePlayer2','minionScorePlayer3','minionScorePlayer4','minionScorePlayer5','minionScorePlayer6','minionScorePlayer7','minionScorePlayer8','minionScorePlayer9','minionScorePlayer10','jungleMinionScorePlayer1','jungleMinionScorePlayer2','jungleMinionScorePlayer3','jungleMinionScorePlayer4','jungleMinionScorePlayer5','jungleMinionScorePlayer6','jungleMinionScorePlayer7','jungleMinionScorePlayer8','jungleMinionScorePlayer9','jungleMinionScorePlayer10','totalGoldPlayer1','totalGoldPlayer2','totalGoldPlayer3','totalGoldPlayer4','totalGoldPlayer5','totalGoldPlayer6','totalGoldPlayer7','totalGoldPlayer8','totalGoldPlayer9','totalGoldPlayer10','totalGoldTeam1','totalGoldTeam2']
 				writer = csv.DictWriter(matchTimelineFile, fieldnames=fnames,lineterminator = '\n')    
 				writer.writeheader()
 
@@ -331,7 +379,7 @@ while flag == 1:
 					totalGoldTeam1=totalGoldPlayer1+totalGoldPlayer2+totalGoldPlayer3+totalGoldPlayer4+totalGoldPlayer5	
 					totalGoldTeam2=totalGoldPlayer6+totalGoldPlayer7+totalGoldPlayer8+totalGoldPlayer9+totalGoldPlayer10
 
-					writer.writerow({'minutes':minute,'levelPlayer1':levelPlayer1,'levelPlayer2':levelPlayer2,'levelPlayer3':levelPlayer3,'levelPlayer4':levelPlayer4,'levelPlayer5':levelPlayer5,'levelPlayer6':levelPlayer6,'levelPlayer7':levelPlayer7,'levelPlayer8':levelPlayer8,'levelPlayer9':levelPlayer9,'levelPlayer10':levelPlayer10,'minionScorePlayer1':minionScorePlayer1,'minionScorePlayer2':minionScorePlayer2,'minionScorePlayer3':minionScorePlayer3,'minionScorePlayer4':minionScorePlayer4,'minionScorePlayer5':minionScorePlayer5,'minionScorePlayer6':minionScorePlayer6,'minionScorePlayer7':minionScorePlayer7,'minionScorePlayer8':minionScorePlayer8,'minionScorePlayer9':minionScorePlayer9,'minionScorePlayer10':minionScorePlayer10,'jungleMinionScorePlayer1':jungleMinionScorePlayer1,'jungleMinionScorePlayer2':jungleMinionScorePlayer2,'jungleMinionScorePlayer3':jungleMinionScorePlayer3,'jungleMinionScorePlayer4':jungleMinionScorePlayer4,'jungleMinionScorePlayer5':jungleMinionScorePlayer5,'jungleMinionScorePlayer6':jungleMinionScorePlayer6,'jungleMinionScorePlayer7':jungleMinionScorePlayer7,'jungleMinionScorePlayer8':jungleMinionScorePlayer8,'jungleMinionScorePlayer9':jungleMinionScorePlayer9,'jungleMinionScorePlayer10':jungleMinionScorePlayer10,'totalGoldPlayer1':totalGoldPlayer1,'totalGoldPlayer2':totalGoldPlayer2,'totalGoldPlayer3':totalGoldPlayer3,'totalGoldPlayer4':totalGoldPlayer4,'totalGoldPlayer5':totalGoldPlayer5,'totalGoldPlayer6':totalGoldPlayer6,'totalGoldPlayer7':totalGoldPlayer7,'totalGoldPlayer8':totalGoldPlayer8,'totalGoldPlayer9':totalGoldPlayer9,'totalGoldPlayer10':totalGoldPlayer10,'totalGoldTeam1':totalGoldTeam1,'totalGoldTeam2':totalGoldTeam2})
+					writer.writerow({'minute':minute,'levelPlayer1':levelPlayer1,'levelPlayer2':levelPlayer2,'levelPlayer3':levelPlayer3,'levelPlayer4':levelPlayer4,'levelPlayer5':levelPlayer5,'levelPlayer6':levelPlayer6,'levelPlayer7':levelPlayer7,'levelPlayer8':levelPlayer8,'levelPlayer9':levelPlayer9,'levelPlayer10':levelPlayer10,'minionScorePlayer1':minionScorePlayer1,'minionScorePlayer2':minionScorePlayer2,'minionScorePlayer3':minionScorePlayer3,'minionScorePlayer4':minionScorePlayer4,'minionScorePlayer5':minionScorePlayer5,'minionScorePlayer6':minionScorePlayer6,'minionScorePlayer7':minionScorePlayer7,'minionScorePlayer8':minionScorePlayer8,'minionScorePlayer9':minionScorePlayer9,'minionScorePlayer10':minionScorePlayer10,'jungleMinionScorePlayer1':jungleMinionScorePlayer1,'jungleMinionScorePlayer2':jungleMinionScorePlayer2,'jungleMinionScorePlayer3':jungleMinionScorePlayer3,'jungleMinionScorePlayer4':jungleMinionScorePlayer4,'jungleMinionScorePlayer5':jungleMinionScorePlayer5,'jungleMinionScorePlayer6':jungleMinionScorePlayer6,'jungleMinionScorePlayer7':jungleMinionScorePlayer7,'jungleMinionScorePlayer8':jungleMinionScorePlayer8,'jungleMinionScorePlayer9':jungleMinionScorePlayer9,'jungleMinionScorePlayer10':jungleMinionScorePlayer10,'totalGoldPlayer1':totalGoldPlayer1,'totalGoldPlayer2':totalGoldPlayer2,'totalGoldPlayer3':totalGoldPlayer3,'totalGoldPlayer4':totalGoldPlayer4,'totalGoldPlayer5':totalGoldPlayer5,'totalGoldPlayer6':totalGoldPlayer6,'totalGoldPlayer7':totalGoldPlayer7,'totalGoldPlayer8':totalGoldPlayer8,'totalGoldPlayer9':totalGoldPlayer9,'totalGoldPlayer10':totalGoldPlayer10,'totalGoldTeam1':totalGoldTeam1,'totalGoldTeam2':totalGoldTeam2})
 
 				
 

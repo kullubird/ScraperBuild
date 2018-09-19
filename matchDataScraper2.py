@@ -448,7 +448,7 @@ while flag == 1:
 
 
 		#remove from new list and add to done
-		#listNewMatchIds.remove(str(tempMatchId))
+		listNewMatchIds.remove(str(tempMatchId))
 		if flag == 1:
 			listDoneMatchIds.append(str(tempMatchId))
 
@@ -470,5 +470,9 @@ for lines in listDoneMatchIds:
 	temp=str(lines)
 	filePointer.write("%s\n"%temp)
 filePointer.close()
-
+filePointer=open("Scraped Data/"+myRegion+"/newMatchIds"+capsRegion+".txt","w")
+for lines in listNewMatchIds:
+	temp=str(lines)
+	filePointer.write("%s\n"%temp)
+filePointer.close()
 	    

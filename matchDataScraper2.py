@@ -61,7 +61,7 @@ else:
 matchDataFile=open("Scraped Data/"+str(myRegion)+"/MatchData.csv",'a')
 
 
-fnames = ['matchId','seasonId','gameDuration','gameCreation','win','team','wardsPlaced','firstBlood','firstTower','firstInhibitor','firstDragon','firstRiftHerald','firstBaron','teamKills','towerKills','inhibitorKills','dragonKills','riftHeraldKills','baronKills','ban1','ban2','ban3','ban4','ban5','pick1','pick2','pick3','pick4','pick5','player1Kills','player2Kills','player3Kills','player4Kills','player5Kills','spell1Player1','spell1Player2','spell1Player3','spell1Player4','spell1Player5','spell2Player1','spell2Player2','spell2Player3','spell2Player4','spell2Player5']
+fnames = ['matchId','seasonId','gameDuration','gameCreation','win','team','wardsPlaced','firstBlood','firstTower','firstInhibitor','firstDragon','firstRiftHerald','firstBaron','teamKills','towerKills','inhibitorKills','dragonKills','riftHeraldKills','baronKills','ban1','ban2','ban3','ban4','ban5','pick1','pick2','pick3','pick4','pick5','player1Kills','player2Kills','player3Kills','player4Kills','player5Kills','spell1Player1','spell1Player2','spell1Player3','spell1Player4','spell1Player5','spell2Player1','spell2Player2','spell2Player3','spell2Player4','spell2Player5','soloKills','duoKills','trioKills','quadKills','pentaKills']
 writerMain = csv.DictWriter(matchDataFile, fieldnames=fnames,lineterminator = '\n')    
 
 if fileFlag==0:
@@ -115,6 +115,17 @@ while flag == 1:
 				#initializing list to count kills
 				teamKills=[0,0]
 				teamWardsPlaced=[0,0]
+
+				soloKills=[0,0]
+				duoKills=[0,0]
+				trioKills=[0,0]
+				quadKills=[0,0]
+				pentaKills=[0,0]
+
+
+
+
+
 				playerKills=[0,0,0,0,0,0,0,0,0,0,0]
 				wardsPlaced=[0,0,0,0,0,0,0,0,0,0,0]
 
@@ -126,6 +137,7 @@ while flag == 1:
 					tempWardPlaced=0
 					tempTimePlaced=0
 					for events in frames['events']:
+						assistCounter=0
 						if events['type'] == "CHAMPION_KILL":
 							#ensure which team scored the kill and count it
 							tempKillerId=events['killerId']
@@ -137,7 +149,48 @@ while flag == 1:
 
 							#add it to the respective player's kill count
 
+
+						#checking how many assists for a kill
+							for assists in events['assistingParticipantIds']:
+								assistCounter+=1
+
+
+							if events['killerId'] >=1 and events['killerId'] <=5:
+								if assistCounter == 0:
+									soloKills[0] += 1
+								elif assistCounter == 1:
+									duoKills[0] += 1
+								elif assistCounter == 2:
+									trioKills[0] += 1
+								elif assistCounter == 3:
+									quadKills[0] += 1
+								elif assistCounter == 4:
+									pentaKills[0] += 1
+								else:
+									print("Error" +str(assistCounter))
+
+							else:
+								if assistCounter == 0:
+									soloKills[1] += 1
+								elif assistCounter == 1:
+									duoKills[1] += 1
+								elif assistCounter == 2:
+									trioKills[1] += 1
+								elif assistCounter == 3:
+									quadKills[1] += 1
+								elif assistCounter == 4:
+									pentaKills[1] += 1
+								else:
+									print("Error" +str(assistCounter))
+
+
+
+
 							playerKills[int(tempKillerId)]+=1
+
+
+
+
 
 						if events['type'] == "WARD_PLACED":
 							#ensure that the ward is not a teemo mushroom
@@ -293,7 +346,7 @@ while flag == 1:
 
 
 							
-					writerMain.writerow({'matchId':tempMatchId,'seasonId':seasonId,'gameDuration':gameDuration,'gameCreation':gameCreation,'win':win,'team':team,'wardsPlaced':teamWardsPlaced[teamNo],'firstBlood':firstBlood,'firstTower':firstTower,'firstInhibitor':firstInhibitor,'firstDragon':firstDragon,'firstRiftHerald':firstRiftHerald,'firstBaron':firstBaron,'teamKills':teamKills[teamNo],'towerKills':towerKills,'inhibitorKills':inhibitorKills,'dragonKills':dragonKills,'riftHeraldKills':riftHeraldKills,'baronKills':baronKills,'ban1':ban1,'ban2':ban2,'ban3':ban3,'ban4':ban4,'ban5':ban5,'pick1':pick1,'pick2':pick2,'pick3':pick3,'pick4':pick4,'pick5':pick5,'player1Kills':player1Kills,'player2Kills':player2Kills,'player3Kills':player3Kills,'player4Kills':player4Kills,'player5Kills':player5Kills,'spell1Player1':spell1[0],'spell1Player2':spell1[1],'spell1Player3':spell1[2],'spell1Player4':spell1[3],'spell1Player5':spell1[4],'spell2Player1':spell2[0],'spell2Player2':spell2[1],'spell2Player3':spell2[2],'spell2Player4':spell2[3],'spell2Player5':spell2[4]})
+					writerMain.writerow({'matchId':tempMatchId,'seasonId':seasonId,'gameDuration':gameDuration,'gameCreation':gameCreation,'win':win,'team':team,'wardsPlaced':teamWardsPlaced[teamNo],'firstBlood':firstBlood,'firstTower':firstTower,'firstInhibitor':firstInhibitor,'firstDragon':firstDragon,'firstRiftHerald':firstRiftHerald,'firstBaron':firstBaron,'teamKills':teamKills[teamNo],'towerKills':towerKills,'inhibitorKills':inhibitorKills,'dragonKills':dragonKills,'riftHeraldKills':riftHeraldKills,'baronKills':baronKills,'ban1':ban1,'ban2':ban2,'ban3':ban3,'ban4':ban4,'ban5':ban5,'pick1':pick1,'pick2':pick2,'pick3':pick3,'pick4':pick4,'pick5':pick5,'player1Kills':player1Kills,'player2Kills':player2Kills,'player3Kills':player3Kills,'player4Kills':player4Kills,'player5Kills':player5Kills,'spell1Player1':spell1[0],'spell1Player2':spell1[1],'spell1Player3':spell1[2],'spell1Player4':spell1[3],'spell1Player5':spell1[4],'spell2Player1':spell2[0],'spell2Player2':spell2[1],'spell2Player3':spell2[2],'spell2Player4':spell2[3],'spell2Player5':spell2[4],'soloKills':soloKills[teamNo],'duoKills':duoKills[teamNo],'trioKills':trioKills[teamNo],'quadKills':quadKills[teamNo],'pentaKills':pentaKills[teamNo]})
 
 
 			#this data will be used to fill the match timeline file 
